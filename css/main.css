@@ -1,2 +1,39 @@
-div {
-  font-size: 200px; }
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  /* width: 100%; */ }
+  .container__header {
+    width: 94%;
+    height: 70px;
+    background-color: tomato;
+    display: flex;
+    align-self: center;
+    justify-content: space-between; }
+  .container__image {
+    width: 94%;
+    height: 100%;
+    display: flex;
+    background-color: aqua;
+    align-self: center; }
+
+.logo {
+  align-self: center;
+  /* padding: 30px; */ }
+
+.menu {
+  align-self: center; }
+
+.image {
+  background-image: url("../img/p3.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
