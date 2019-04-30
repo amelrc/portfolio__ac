@@ -1,3 +1,5 @@
+@import "variables/colors.scss";
+
 body {
     padding: 0;
     margin: 0;
@@ -14,7 +16,7 @@ body {
     &__header {
         width: 94%;
         height: 70px;
-        background-color: tomato;
+        // background-color: tomato;
         display: flex;
         align-self: center;
         justify-content: space-between;
@@ -23,9 +25,9 @@ body {
     width: 94%;
     height: 100%;
     display: flex;
-    background-color: aqua;
     align-self: center;
-    }   
+    position: relative;
+    } 
 }
 
 .logo {
@@ -42,5 +44,85 @@ body {
     width: 100%;
     height: 100%;
     background-size: cover;
+    cursor: pointer;
 }
 
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__left-side {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: $green-bg;
+    }
+    &__projects {
+        width: 2.5%;
+        height: 100%;
+        background-color: $green-bg;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    font-family: Catamaran;
+    font-size: 23px;
+    font-weight: 300;
+    color: $white;
+    align-self: center;
+    width: 63%;
+    height: 45%;
+    &__one{
+        margin: 0;
+    }
+    &__two {
+        margin: 0;
+        font-size: 28px;
+    }
+    &__three {
+        margin: 0;
+        font-size: 28px;
+    }
+    &__arrow {
+        background-image: url('../img/arrow__test.png');
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+.italic {
+    font-family: PlayfairDisplay;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.project {
+    width: 100%;
+    height: 2.5vw;
+    &--1 {
+        background-color: $red;
+    }
+    &--2 {
+        background-color: $green;
+    }
+    &--3 {
+        background-color: $blue;
+    }
+    &--4 {
+        background-color: $orange;
+    }
+    &--5 {
+        background-color: $violet;
+    }
+}
