@@ -57,7 +57,8 @@ body {
         width: 35%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
         background-color: $green-bg;
         &--full {
             width: 100%;
@@ -81,38 +82,112 @@ body {
 .intro {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     font-family: Catamaran;
-    font-size: 23px;
     font-weight: 300;
-    color: $white;
-    align-self: center;
-    width: 63%;
-    height: 45%;
+    color: #ffffff;
+    width: 85%;
+    height: 50%;
+    // background-color: cadetblue;
+    
     &__one{
-        margin: 0;
+        margin: 0 0 20px;
+        /* width: 178px; */
+        /* height: 32px; */
+        font-family: Catamaran;
+        font-size: 1.8vw;
+        font-weight: 900;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1.3px;
+        color: #ffffff;
+        text-transform: uppercase; 
     }
     &__two {
-        margin: 0;
-        font-size: 28px;
+        margin: 0 44px;
+        /* height: 27px; */
+        font-family: Playfair Display;
+        font-size: 1.8vw;
+        font-weight: bold;
+        /* font-style: normal; */
+        /* font-stretch: normal; */
+        /* line-height: 2.25; */
+        /* letter-spacing: normal; */
+        /* color: #ffffff; */
+        text-transform: uppercase;
     }
     &__three {
+        margin: 0 0 30px;
+        /* font-family: Catamaran; */
+        font-size: 5vw;
+        font-weight: 900;
+        /* font-style: normal; */
+        /* font-stretch: normal; */
+        line-height: 0.8;
+        /* letter-spacing: normal; */
+        /* color: #ffffff; */
+        text-transform: lowercase;
+    }
+    &__four {
+        margin: 0 44px;
+        /* height: 27px; */
+        font-family: Playfair Display;
+        font-size: 1.8vw;
+        font-weight: bold;
+        /* font-style: normal; */
+        /* font-stretch: normal; */
+        /* line-height: 2.25; */
+        /* letter-spacing: normal; */
+        /* color: #ffffff; */
+        text-transform: uppercase;
+    }
+    &__five {
         margin: 0;
-        font-size: 28px;
+        /* font-family: Catamaran; */
+        font-size: 5vw;
+        font-weight: 900;
+        /* font-style: normal; */
+        /* font-stretch: normal; */
+        line-height: 0.8;
+        /* letter-spacing: normal; */
+        /* color: #ffffff; */
+        text-transform: lowercase;
     }
 }
 
 .arrow {
-    background-image: url('../img/arrow__test.png');
-    // width: 100%;
-    // height: 100%;
-    // background-repeat: no-repeat;
-    // background-position: right;
-    background-size: 80%;
-    width: 6%;
-    height: 9%;
+    background-size: 8%;
+    width: 85%;
+    height: 50%;
     background-repeat: no-repeat;
-    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    &__image {
+        background-image: url('../img/arrow__test.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 9%;
+        height: 20%;
+        margin-top: -32px;
+        animation-name: arrow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes arrow {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            margin-right: -26px;
+            opacity: 1;
+        }
+    } 
 }
+
 
 .bg-about {
     position: absolute;
@@ -200,18 +275,26 @@ body {
 }
 
 .italic {
-    font-family: PlayfairDisplay;
-    font-size: 30px;
-    font-weight: bold;
+    width: 235px;
+    height: 72px;
+    font-family: Catamaran;
+    font-size: 56px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.8;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-transform: lowercase;
     &--bg-about {
         font-size: 38vw;
-        font-family: PlayfairDisplay;
+        font-family: Playfair Display;
         font-weight: 900;
         line-height: 0.3;
         text-transform: lowercase;
     }
     &--about {
-        font-family: PlayfairDisplay;
+        font-family: Playfair Display;
         font-size: 5.5vw;
         font-weight: 900;
         line-height: 0.6;
@@ -238,3 +321,62 @@ body {
         background-color: $violet;
     }
 }
+
+$t: 1s;
+$d: 0.04em;
+$n: 3;
+$e: cubic-bezier(0.860, 0.000, 0.070, 1.000); 
+$front: $white;
+$back: $dark;
+
+// .popout{
+//     margin: 0 0 20px;
+//     /* width: 178px; */
+//     /* height: 32px; */
+//     font-family: Catamaran;
+//     font-size: 1.8vw;
+//     font-weight: 900;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: normal;
+//     letter-spacing: 1.3px;
+//     color: #ffffff;
+//     text-transform: uppercase;
+//     .span {
+//         letter-spacing: -7px;
+//         &__space {
+//             margin-right: 50px !important;
+//         }
+//     }
+
+// 	@keyframes ani{
+// 		0%{
+// 			transform: translate3d(0,0,0);
+// 			// text-shadow: 0em 0em 0 $back;
+// 			color: $front;
+// 		}
+// 		30%{
+// 			transform: translate3d(0,0,0);
+// 			// text-shadow: 0em 0em 0 $back;
+// 			color: $front;
+// 		}
+// 		70%{
+// 			transform: translate3d($d,-$d,0);
+// 			// text-shadow: -$d $d $back;
+// 			color: $front;
+// 		}
+// 		100%{
+// 			transform: translate3d($d,-$d,0);
+// 			// text-shadow: -$d $d $back;
+// 			color: $front;
+// 		}
+// 	}
+// 	span{
+// 		position: relative;
+// 		display: inline-block;
+// 		animation: ani $t infinite alternate $e;
+// 		@for $i from 1 through $n{
+// 			&:nth-last-child(#{$i}n){ animation-delay: -$t*$i/$n/2;}
+// 		}
+// 	}	
+// }

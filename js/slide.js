@@ -1,4 +1,6 @@
 
+
+// Start Slide
 let arr = ['0.png','1.png','2.png','3.png','4.png','5.png','6.png','7.png','8.png','9.png','10.png','11.png','12.png'];
 let index = 0;
 let image = document.getElementById('image');
@@ -33,6 +35,14 @@ document.addEventListener('keydown', (event) => {
          : right ? next()
          : '';
   });
+//End Slide
+
+//Start Arrow
+
+const arrow = document.querySelector('.arrow__image')
+
+arrow.addEventListener('onclick', )
+
 
 
 
