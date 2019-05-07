@@ -12,7 +12,7 @@ task('removeStyles', function(cb) {
 });
 
 task('createSass', function () {
-    return src('./sass/*.scss')
+    return src('sass/**/*.scss')
       .pipe(sass.sync().on('error', sass.logError))
       .pipe(dest('./css'));
   });
