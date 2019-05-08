@@ -158,6 +158,15 @@
     margin-right: -26px;
     opacity: 1; } }
 
+.wrapper__projects {
+  background-color: rgba(50, 130, 10, 0.9);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 2.5%; }
+
 body {
   padding: 0;
   margin: 0;
@@ -179,26 +188,79 @@ body {
     height: 100%;
     position: relative;
     width: 94%; }
+  .container--project {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #212027; }
 
 .logo {
   align-self: center;
   width: 2%; }
 
 .menu {
-  align-self: center; }
+  align-self: center;
+  width: 2%; }
 
 .image {
   background-image: url("../img/p3.jpg");
   width: 100%;
   height: 100%;
-  background-size: cover;
-  cursor: pointer; }
+  background-size: cover; }
 
 .wrapper {
   display: flex;
   height: 100%;
   justify-content: space-between;
   position: absolute;
+  width: 100%; }
+  .wrapper__link {
+    width: 62.5%; }
+  .wrapper--project {
+    position: absolute; }
+
+.italic {
+  color: #ffffff;
+  font-family: Catamaran;
+  font-size: 56px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 900;
+  height: 72px;
+  letter-spacing: normal;
+  line-height: 0.8;
+  text-transform: lowercase;
+  width: 235px; }
+  .italic--bg-about {
+    font-family: Playfair Display;
+    font-size: 35vw;
+    font-weight: 900;
+    line-height: 0.3;
+    text-transform: lowercase; }
+  .italic--about {
+    font-family: Playfair Display;
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 0.6;
+    text-transform: lowercase; }
+
+.project {
+  width: 100%;
+  height: 2.5vw; }
+  .project--1 {
+    background-color: #ee6c4d; }
+  .project--2 {
+    background-color: #a2ff51; }
+  .project--3 {
+    background-color: #51a2ff; }
+  .project--4 {
+    background-color: #ffae51; }
+  .project--5 {
+    background-color: #ae51ff; }
+
+section {
+  display: flex;
+  height: 100%;
   width: 100%; }
 
 .bg-about {
@@ -277,51 +339,3 @@ body {
   height: 9%;
   position: relative;
   width: 6%; }
-
-.italic {
-  color: #ffffff;
-  font-family: Catamaran;
-  font-size: 56px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 900;
-  height: 72px;
-  letter-spacing: normal;
-  line-height: 0.8;
-  text-transform: lowercase;
-  width: 235px; }
-  .italic--bg-about {
-    font-family: Playfair Display;
-    font-size: 35vw;
-    font-weight: 900;
-    line-height: 0.3;
-    text-transform: lowercase; }
-  .italic--about {
-    font-family: Playfair Display;
-    font-size: 5vw;
-    font-weight: 900;
-    line-height: 0.6;
-    text-transform: lowercase; }
-
-.project {
-  width: 100%;
-  height: 2.5vw; }
-  .project--1 {
-    background-color: #ee6c4d; }
-  .project--2 {
-    background-color: #a2ff51; }
-  .project--3 {
-    background-color: #51a2ff; }
-  .project--4 {
-    background-color: #ffae51; }
-  .project--5 {
-    background-color: #ae51ff; }
-
-.wrapper__projects {
-  background-color: rgba(50, 130, 10, 0.9);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  width: 2.5%; }
