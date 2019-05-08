@@ -1,0 +1,8 @@
+
+
+@mixin animation {
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-name: move;
+    position: relative;
+}
