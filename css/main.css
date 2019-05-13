@@ -6,13 +6,26 @@
   height: 100%;
   width: 35%;
   transition: background-color;
-  transition: width 1s ease; }
+  transition: width 1s ease;
+  align-self: flex-start;
+  position: relative;
+  justify-content: space-between; }
   .wrapper__left-side--full {
     background-color: #32820A;
     display: flex;
     height: 100%;
     justify-content: space-between;
     width: 100%; }
+
+.wrapper__projects {
+  background-color: rgba(50, 130, 10, 0.9);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 2.5%;
+  position: relative; }
 
 .intro {
   color: #ffffff;
@@ -159,6 +172,8 @@ body {
     display: flex;
     height: 100%;
     position: relative;
+    justify-content: space-between;
+    overflow: auto;
     width: 94%; }
   .container--project {
     display: flex;
@@ -168,17 +183,22 @@ body {
 
 .logo {
   align-self: center;
-  width: 2%; }
-
-.menu {
-  align-self: center;
-  width: 2%; }
+  width: 2.5%; }
+  .logo__left, .logo__right {
+    width: 100%; }
 
 .image {
   background-image: url("../img/p3.jpg");
-  width: 100%;
+  width: 94%;
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  cursor: pointer;
+  position: fixed; }
+  .image--project {
+    background-image: url("../img/moon.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
 
 .wrapper {
   display: flex;
@@ -186,10 +206,6 @@ body {
   justify-content: space-between;
   position: absolute;
   width: 100%; }
-  .wrapper__link {
-    width: 62.5%; }
-  .wrapper--project {
-    position: absolute; }
 
 .italic {
   color: #ffffff;
@@ -311,3 +327,48 @@ section {
   height: 9%;
   position: relative;
   width: 6%; }
+
+.main {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.sectCero {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.sectOne {
+  background-image: url("../../img/cat.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.sectTwo {
+  background-image: url("../../img/butterflies.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.sub {
+  background-color: aqua;
+  height: 50%;
+  width: 100%; }
+
+.sub1 {
+  background-color: darkgoldenrod;
+  height: 50%;
+  width: 100%; }
