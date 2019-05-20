@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+
+@mixin ProjectTitle {
+    @include TypoStyle('Catamaran', 34px, 600, normal, normal, normal, $darker-gray);
+}
+@mixin ProjectYear {
+    @include TypoStyle('Catamaran', 20px, 600, normal, normal, normal, $darker-gray);
+}
+@mixin Text {
+    @include TypoStyle('Catamaran', 14px, 100, normal, normal, normal, $darker-gray);
+}
+
+
+    

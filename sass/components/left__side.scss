@@ -5,13 +5,10 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 35%;
-    transition: background-color;
-    transition: width 1s ease;
-    align-self: flex-start;
-    position: relative;
     justify-content: space-between;
-    
+    position: relative;
+    transition: background-color 0.5s, width 0.5s;
+    width: 35%;
     &--full {
         background-color: $green-about;
         display: flex;
@@ -19,11 +16,6 @@
         justify-content: space-between;
         width: 100%;
     }
-    // &--open {
-    //     background: $green-about;
-    //     transition: width 0.5s ease;
-    //     width: 100%;
-    // }
 }
 
 .wrapper__projects {
@@ -37,8 +29,11 @@
     position: relative;
 }
 
+.transition-left {
+    @include transition-left;          
+}
+
 .intro {
-    // background-color: cadetblue;
     color: $white;
     display: flex;
     flex-direction: column;
@@ -47,69 +42,45 @@
     justify-content: flex-end;
     width: 85%;
     overflow: hidden;
-    &--animation {
-        @keyframes move {
-            0% {
-                left: 0;
-            }
-            100% {
-                left: 328px;
-            }
-        }
-    }
-    &__one{
+    &__one {
         font-size: 1.8vw;
         font-weight: 900;
         letter-spacing: 1.3px;
-        margin: 0 0 20px;
+        margin: 28px 0 20px;
         overflow: hidden;
         text-transform: uppercase;
-        width: 210px;
-        &--animation {
-            @include animation;
-            margin: 0;
-        }
+        width: 220px;
     }
     &__two {
         font-family: Playfair Display;
         font-size: 1.8vw;
         font-weight: bold;
-        margin: 0 44px;
+        margin: 0 24px;
         overflow: hidden;
         text-transform: uppercase;
-        width: 70px;
-        &--animation {
-            @include animation;
-            margin: 0;
-        }
+        width: 110px; 
     }
     &__three {
         align-items: center;
         display: flex;
         font-size: 5vw;
         font-weight: 900;
-        height: 76px;
+        height: 78px;
         line-height: 0.8;
         overflow: hidden;
         text-transform: lowercase;
-        width: 282px;
-        &--animation {
-            @include animation;
-        }
+        width: 290px;
     }
     &__four {
         font-family: Playfair Display;
         font-size: 1.8vw;
         font-weight: bold;
-        margin: 0 44px;
+        margin: 0px 22px;
         overflow: hidden;
         text-transform: uppercase;
-        width: 90px;
-        &--animation {
-            @include animation;
-            margin: 0;
-        }
+        width: 114px;
     }
+
     &__five {
         align-items: center;
         display: flex;
@@ -119,13 +90,13 @@
         line-height: 0.8;
         overflow: hidden;
         text-transform: lowercase;
-        width: 328px;
-        &--animation {
-            @include animation;
-        }
+        width: 334px; 
     }
 }
-
+.nothing {
+    overflow: hidden;
+    width: 110px; 
+}
 .arrow {
     background-repeat: no-repeat;
     background-size: 8%;
@@ -134,9 +105,7 @@
     justify-content: flex-end;
     width: 85%;
     &__image {
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-name: arrow;
+        animation: 2s infinite arrow;
         background-image: url('../img/arrow__test.png');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -144,6 +113,8 @@
         height: 20%;
         margin-top: -32px;
         width: 9%;
+        opacity: 1;
+        // transition: opacity 0.5s;
     }
     @keyframes arrow {
         0% {

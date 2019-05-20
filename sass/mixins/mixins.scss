@@ -1,8 +1,24 @@
 
 
-@mixin animation {
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-name: move;
+@mixin transition-left {
+    left: 0;
+    transition: left 0.8s;   
     position: relative;
 }
+
+@mixin transition-top {
+    top: 0;
+    transition: top 1s;   
+    position: relative;
+}
+
+@mixin TypoStyle($fontFamily, $fontSize, $fontWeight, $fontStyle, $fontHeight, $letterSpacing, $color) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    font-style: $fontStyle;
+    line-height: $fontHeight;
+    letter-spacing: $letterSpacing;
+    color: $color;
+}
+
