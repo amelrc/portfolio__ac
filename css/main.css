@@ -161,8 +161,10 @@ body {
   .logo__left, .logo__right {
     width: 100%; }
 
+.testing {
+  overflow: scroll; }
+
 .image {
-  background-image: url("../img/p3.jpg");
   width: 94%;
   height: 100%;
   background-size: cover;
