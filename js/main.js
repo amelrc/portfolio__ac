@@ -20,7 +20,7 @@ function arrowClick() {
     }, 800); 
 }
 
-///////////////////////
+// Image Gallery //
 
 const arr = ['../img/p3.jpg','../img/cat.png','../img/moon.png', '../img/butterflies.jpg', '../img/me.png'];
 let index = 0;
