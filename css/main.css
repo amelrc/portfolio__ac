@@ -149,11 +149,6 @@ body {
     justify-content: space-between;
     overflow: auto;
     width: 94%; }
-  .container--project {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #212027; }
 
 .logo {
   align-self: center;
@@ -333,12 +328,23 @@ section {
 .hidden {
   opacity: 0; }
 
+.container--project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #212027; }
+
 .section {
+  background-image: url("../../img/moon.png");
   width: 100%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  overflow-x: hidden; }
   .section__cero {
-    height: 50%; }
+    height: 40%; }
   .section__one {
     width: 30%;
     overflow-y: auto;
@@ -352,7 +358,7 @@ section {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-    padding: 130px 0; }
+    padding: 170px 0; }
   .section__three {
     background-image: url("../../img/butterflies.jpg");
     display: flex;
@@ -363,6 +369,15 @@ section {
     display: flex;
     justify-content: center;
     padding: 200px 0; }
+  .section__five {
+    background-color: #eeeeef;
+    display: flex;
+    justify-content: center;
+    padding: 200px 0; }
+  .section__six {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0; }
 
 .project-title {
   font-family: "Catamaran";
@@ -408,3 +423,8 @@ section {
 .image-ipad {
   border: 15px solid #212027;
   border-radius: 15px; }
+
+.image-iphone {
+  border: 10px solid #212027;
+  border-radius: 15px;
+  margin: 0 60px; }

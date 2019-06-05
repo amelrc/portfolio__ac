@@ -24,18 +24,7 @@ body {
     justify-content: space-between;
     overflow: auto;
     width: 94%; 
-        // &--project {
-        //     background-image: url('../../img/p3.jpg');
-        //     background-attachment: fixed;
-        // }
     } 
-    &--project {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        background-color: $dark
-        
-    }
 }
 
 .logo {

@@ -1,4 +1,3 @@
-// import leftSide from "./left__side.js";
 
 let arrow = document.querySelector('.arrow__image');
 let leftSide = document.querySelector('.wrapper__left-side');
@@ -29,26 +28,27 @@ let savedNum;
 const images = document.querySelector('#images');
 
 const up = () => {
-    console.log(arr[index])
-    images.setAttribute('src', arr[index--])
+    console.log(arr[index], 'up movement')
     
-    if(index < 0){
-        console.log("what is this")
+    images.setAttribute('src', arr[index--])
+    if(index < 0 ){
         index = 4
     }
 }
     
 const down = () => {
-    console.log(arr[index])
-  
+    console.log('down movement', arr[index] )
     
     images.setAttribute('src', arr[index++])
-    if(index > 4){index = 0}
-      
+
+    console.log(arr[index++])
+    if(index > 4) {
+        index = 0
+    }
 }
 
 container.addEventListener('wheel', (e) => {
-    console.log(savedNum, "hereeeeee")
+    console.log(savedNum, "delta Y number")
       savedNum = e.deltaY;
       savedNum < 0 ? up() : down()
 });
