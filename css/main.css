@@ -128,39 +128,69 @@ body {
     height: 100%;
     background-size: cover; }
 
-.header {
+.header-body {
   display: flex;
   flex-direction: column;
   height: 50%;
-  width: 100%;
-  justify-content: flex-end;
-  background-color: aqua; }
-  .header__left {
-    margin-right: 4px; }
-  .header__right {
-    margin-left: 4px;
-    text-transform: uppercase; }
+  position: relative; }
 
-.top-header {
+.ampersand {
   display: flex;
-  background-color: antiquewhite;
+  justify-content: flex-end;
+  height: 100%;
   align-items: center;
-  align-self: center; }
+  text-transform: uppercase; }
+
+.content {
+  display: flex;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+  .content__left {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    justify-content: center; }
+  .content__right {
+    align-self: flex-end;
+    margin-bottom: 48px; }
 
 .text {
-  margin: 0; }
-  .text--left {
-    -webkit-text-stroke: 1px #ee6c4d;
+  margin: 0;
+  font-family: Catamaran;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1.5px; }
+  .text--outline {
+    -webkit-text-stroke: 2px #F85959;
     color: transparent;
-    font-size: 6vw; }
-  .text--right {
-    text-align: right; }
+    font-size: 5vw; }
+  .text--full {
+    font-size: 4vw;
+    color: #474554;
+    align-self: flex-end;
+    text-transform: uppercase; }
+  .text--ampersand {
+    font-size: 9vw;
+    color: #ffffff;
+    margin-right: 360px;
+    margin-top: 120px;
+    font-family: Playfair Display; }
+  .text--right-bottom {
+    align-self: center;
+    font-size: 4vw;
+    color: #474554;
+    top: 88px; }
 
 .arrow {
   display: flex;
   justify-content: flex-end;
   align-self: center;
-  width: 50%; }
+  width: 55%;
+  margin-bottom: -30px; }
   .arrow__testimage {
     animation: 2s infinite arrow;
     cursor: pointer;
@@ -172,7 +202,7 @@ body {
   50% {
     opacity: 1; }
   100% {
-    margin-right: -26px;
+    margin-right: -36px;
     opacity: 1; } }
 
 .wrapper__projects {
@@ -196,7 +226,7 @@ body {
   .project--0 {
     background-color: transparent; }
   .project--1 {
-    background-color: #ee6c4d; }
+    background-color: #F85959; }
     .project--1:hover {
       display: flex;
       align-items: center;
@@ -204,23 +234,75 @@ body {
       .project--1:hover .p-name {
         display: flex;
         margin: 0 30px;
-        align-self: center; }
+        align-self: center;
+        font-family: Catamaran;
+        font-weight: 800;
+        letter-spacing: 7px;
+        color: #ffffff; }
+      .project--1:hover .container__body {
+        background-color: violet; }
   .project--2 {
     background-color: #a2ff51; }
+    .project--2:hover {
+      display: flex;
+      align-items: center;
+      width: auto; }
+      .project--2:hover .p-name {
+        display: flex;
+        margin: 0 30px;
+        align-self: center;
+        font-family: Catamaran;
+        font-weight: 800;
+        letter-spacing: 7px;
+        color: #ffffff; }
   .project--3 {
     background-color: #51a2ff; }
+    .project--3:hover {
+      display: flex;
+      align-items: center;
+      width: auto; }
+      .project--3:hover .p-name {
+        display: flex;
+        margin: 0 30px;
+        align-self: center;
+        font-family: Catamaran;
+        font-weight: 800;
+        letter-spacing: 7px;
+        color: #ffffff; }
   .project--4 {
-    background-color: #ffae51, transparent; }
+    background-color: #ffae51; }
+    .project--4:hover {
+      display: flex;
+      align-items: center;
+      width: auto; }
+      .project--4:hover .p-name {
+        display: flex;
+        margin: 0 30px;
+        align-self: center;
+        font-family: Catamaran;
+        font-weight: 800;
+        letter-spacing: 7px;
+        color: #ffffff; }
   .project--5 {
-    background-color: #ae51ff, transparent; }
+    background-color: #ae51ff; }
+    .project--5:hover {
+      display: flex;
+      align-items: center;
+      width: auto; }
+      .project--5:hover .p-name {
+        display: flex;
+        margin: 0 30px;
+        align-self: center;
+        font-family: Catamaran;
+        font-weight: 800;
+        letter-spacing: 7px;
+        color: #ffffff; }
 
 .p-name {
   display: none; }
 
-section {
-  display: flex;
-  height: 100%;
-  width: 100%; }
+.p-link {
+  text-decoration: none; }
 
 .bg-about {
   color: white;

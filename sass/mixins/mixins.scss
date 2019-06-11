@@ -22,3 +22,13 @@
     color: $color;
 }
 
+@mixin navigation {
+    display: flex;
+    margin: 0 30px;
+    align-self: center;
+    font-family: Catamaran;
+    font-weight: 800;
+    letter-spacing: 7px;
+    color: $white;
+}
+

@@ -45,7 +45,6 @@ body {
 }
 
 .image {
-    // background-image: url('../img/p3.jpg');
     width: 94%;
     height: 100%;
     background-size: cover;
@@ -59,47 +58,79 @@ body {
     }
 }
 
-.header {
+.header-body {
     display: flex;
     flex-direction: column;
     height: 50%;
-    width: 100%;
+    position: relative;
+}
+
+.ampersand{
+    display: flex;
     justify-content: flex-end;
-    // align-items: center;
-    background-color: aqua;  
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    align-self: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     &__left {
-        margin-right: 4px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: center;
     }
     &__right {
-        margin-left: 4px;
-        text-transform: uppercase;
+        align-self: flex-end;
+        margin-bottom: 48px;
     }
-}
-.top-header {
-    display: flex;
-    background-color: antiquewhite;
-    align-items: center;
-    align-self: center;
 }
 
 .text {
     margin: 0;
-    &--left {
-    -webkit-text-stroke: 1px $red;
+    font-family: Catamaran;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    &--outline {
+    -webkit-text-stroke: 2px $red;
     color: transparent;
-    font-size: 6vw;
+    font-size: 5vw;
     }
-    &--right {
-        text-align: right
+    &--full{
+        font-size: 4vw;
+        color: $dark-gray;
+        align-self: flex-end;
+        text-transform: uppercase;
+    }
+    &--ampersand {
+        font-size: 9vw;
+        color: $white;
+        margin-right: 360px;
+        margin-top: 120px;
+        font-family: Playfair Display;
+    }
+    &--right-bottom {
+        align-self: center;
+        font-size: 4vw;
+        color: $dark-gray;
+        top: 88px;
     }
 }
-
 
 .arrow {
     display: flex;
     justify-content: flex-end;
     align-self: center;
-    width: 50%;
+    width: 55%;
+    margin-bottom: -30px;
     &__testimage {
         animation: 2s infinite arrow;
         cursor: pointer;
@@ -113,14 +144,13 @@ body {
             opacity: 1;
         }
         100% {
-            margin-right: -26px;
+            margin-right: -36px;
             opacity: 1;
         }
     }
 }
+
 .wrapper__projects {
-    // background-color: $green-bg;
-    // cursor: pointer;
     height: 50%;
     width: 100%;
     display: flex;
@@ -135,13 +165,6 @@ body {
     position: absolute;
     width: 100%;
     background-color: $light-gray;
-//     &__project {
-//         position: relative;
-//         width: 100%;
-//         height: 100%;
-//         // overflow: hidden;
-//     }
-    
 }
 
 .project {
@@ -158,23 +181,57 @@ body {
             align-items: center;
             width: auto;
             .p-name {
-                display: flex;
-                margin: 0 30px;
-                align-self: center;
+                @include navigation;
+            }
+            .container__body {
+                background-color: violet;
+                // background-image: url('../../img/p3.jpg');
             }
         }
     }
     &--2 {
         background-color: $green;
+        &:hover {
+            display: flex;
+            align-items: center;
+            width: auto;
+            .p-name {
+                @include navigation;
+            }
+        }
     }
     &--3 {
         background-color: $blue;
+        &:hover {
+            display: flex;
+            align-items: center;
+            width: auto;
+            .p-name {
+                @include navigation;
+            }
+        }
     }
     &--4 {
-        background-color: $orange, transparent;
+        background-color: $orange;
+        &:hover {
+            display: flex;
+            align-items: center;
+            width: auto;
+            .p-name {
+                @include navigation;
+            }
+        }
     }
     &--5 {
-        background-color: $violet, transparent;
+        background-color: $violet;
+        &:hover {
+            display: flex;
+            align-items: center;
+            width: auto;
+            .p-name {
+                @include navigation;
+            }
+        }
     }
 }
 
@@ -182,10 +239,6 @@ body {
     display: none;
 }
 
-
-
-section {
-    display: flex;
-    height: 100%;
-    width: 100%;
+.p-link {
+    text-decoration: none;
 }
