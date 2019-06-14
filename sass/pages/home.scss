@@ -18,7 +18,6 @@ body {
     }
     &__body {
     align-self: center;
-    // display: flex;
     height: 100%;
     position: relative;
     justify-content: space-between;
@@ -131,7 +130,7 @@ body {
     align-self: center;
     width: 55%;
     margin-bottom: -30px;
-    &__testimage {
+    &__image {
         animation: 2s infinite arrow;
         cursor: pointer;
         height: 70px;
@@ -167,6 +166,15 @@ body {
     background-color: $light-gray;
 }
 
+.p-name {
+    display: none;
+}
+
+.p-link {
+    // visibility: hidden;
+    text-decoration: none; 
+}
+
 .project {
     width: 1%;
     height: 100%;
@@ -175,17 +183,13 @@ body {
     }
     &--1 {
         background-color: $red;
-        //can become a mixin. do not forget transition
         &:hover {
             display: flex;
             align-items: center;
             width: auto;
             .p-name {
                 @include navigation;
-            }
-            .container__body {
-                background-color: violet;
-                // background-image: url('../../img/p3.jpg');
+                text-transform: uppercase;
             }
         }
     }
@@ -197,6 +201,7 @@ body {
             width: auto;
             .p-name {
                 @include navigation;
+                text-transform: uppercase;
             }
         }
     }
@@ -235,10 +240,116 @@ body {
     }
 }
 
-.p-name {
-    display: none;
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape) {
+    .content__right {
+        margin-bottom: 88px;
+    }
+    .arrow {
+        margin-bottom: 0;
+    }
+    .text--ampersand {
+        margin-top: 100px;
+        margin-right: 260px;
+    }
+
 }
 
-.p-link {
-    text-decoration: none;
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait){
+
+    .content {
+        flex-direction: column;
+        width: auto;
+    }
+    .text--outline {
+        font-size: 7vw;
+    }
+    .text--full {
+        font-size: 6vw;
+    }
+
+    .text--ampersand {
+        margin-right: 260px;
+        margin-top: 155px;
+    }
+    .arrow {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 812px) 
+and (orientation : portrait) {
+    .content {
+        flex-direction: column;
+        width: auto;
+    }
+    .text--outline {
+        font-size: 12vw;
+    }
+    .text--full {
+        font-size: 9vw;
+    }
+
+    .text--ampersand {
+        margin-right: 50px;
+        margin-top: 140px;
+        font-size: 16vw;
+    }
+
+    .arrow {
+        margin-bottom: 70px;
+    }
+
+    .project {
+        width: 10%;
+        &--1 {
+            background-color: $red;
+            .p-name {
+                @include navigation;
+                width: auto;
+                display: flex;
+                align-items: center;
+                display: none;
+            }  
+        }
+    }
+}
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 812px)
+and (orientation : landscape) {
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.background--1 {
+    background-image: url('../../img/moon.png');
+    background-size: cover;
+}
+.background--2 {
+    background-image: url('../../img/me.png');
+    background-size: cover;
+}
+.background--3 {
+    background-image: url('../../img/p3.jpg');
+    background-size: cover;
+}
+.background--4 {
+    background-image: url('../../img/butterflies.jpg');
+    background-size: cover;
+}
+.background--5 {
+    background-image: url('../../img/cat.png');
+    background-size: cover;
 }
