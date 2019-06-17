@@ -226,6 +226,12 @@ body {
 .p-link {
   text-decoration: none; }
 
+.hidden {
+  visibility: hidden; }
+
+.hidden-test {
+  display: none; }
+
 .project {
   width: 1%;
   height: 100%; }
@@ -358,9 +364,6 @@ body {
         align-items: center;
         display: none; } }
 
-.hidden {
-  visibility: hidden; }
-
 .background--1 {
   background-image: url("../../img/moon.png");
   background-size: cover; }
@@ -415,7 +418,7 @@ body {
   flex-direction: column;
   font-family: Catamaran;
   justify-content: space-around;
-  width: 46%;
+  width: 100%;
   z-index: 1;
   margin-right: 120px; }
   .about__bg-about {

@@ -171,8 +171,15 @@ body {
 }
 
 .p-link {
-    // visibility: hidden;
     text-decoration: none; 
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hidden-test {
+    display: none;
 }
 
 .project {
@@ -327,10 +334,6 @@ and (min-width : 375px)
 and (max-width : 812px)
 and (orientation : landscape) {
 
-}
-
-.hidden {
-    visibility: hidden;
 }
 
 .background--1 {
