@@ -25,8 +25,6 @@ function navHover(el) {
         const projectNumber = el.path[0].classList[1].charAt(9);
         const classNumber = bgClass.charAt(12);
         
-        console.log('entered the zone', projectNumber);
-        
         (projectNumber === classNumber) ? bg1.classList.add(bgClass) : bg1.classList.remove(bgClass);
         
     });

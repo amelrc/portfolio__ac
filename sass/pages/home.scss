@@ -287,15 +287,20 @@ and (orientation : portrait){
     .arrow {
         margin-bottom: 70px;
     }
+    .project {
+        width: 5%;
+    }
 }
 
 @media only screen 
-and (min-width : 375px) 
-and (max-width : 812px) 
+and (max-width : 375px) 
 and (orientation : portrait) {
     .content {
         flex-direction: column;
         width: auto;
+        &__right {
+            margin: 14px 0;
+        }
     }
     .text--outline {
         font-size: 12vw;
@@ -311,30 +316,63 @@ and (orientation : portrait) {
     }
 
     .arrow {
-        margin-bottom: 70px;
+        margin-bottom: 20px;
     }
 
     .project {
         width: 10%;
-        &--1 {
-            background-color: $red;
-            .p-name {
-                @include navigation;
-                width: auto;
-                display: flex;
-                align-items: center;
-                display: none;
-            }  
-        }
+        // &--1 {
+        //     background-color: $red;
+        //     .p-name {
+        //         // @include navigation;
+        //         // width: auto;
+        //         // display: flex;
+        //         // align-items: center;
+        //         // display: none;
+        //     }  
+        // }
     }
 }
 
-@media only screen 
-and (min-width : 375px) 
-and (max-width : 812px)
-and (orientation : landscape) {
+// @media only screen 
+// and (max-width : 812px)
+// and (orientation : landscape) {
+//     .content {
+//         flex-direction: column;
+//         width: auto;
+//     }
+//     .text--outline {
+//         font-size: 12vw;
+//     }
+//     .text--full {
+//         font-size: 9vw;
+//     }
 
-}
+//     .text--ampersand {
+//         margin-right: 50px;
+//         margin-top: 140px;
+//         font-size: 16vw;
+//     }
+
+//     .arrow {
+//         margin-bottom: 50px;
+//     }
+
+//     .project {
+//         width: 10%;
+//         &--1 {
+//             background-color: $red;
+//             .p-name {
+//                 @include navigation;
+//                 width: auto;
+//                 display: flex;
+//                 align-items: center;
+//                 display: none;
+//             }  
+//         }
+//     }
+
+// }
 
 .background--1 {
     background-image: url('../../img/moon.png');
