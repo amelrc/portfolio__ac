@@ -168,6 +168,11 @@
     height: 9%;
     position: relative;
     width: 6%;
+    &--menu {
+        margin-bottom: 50px;
+        height: 40px;
+        cursor: pointer;  
+    }
 }
 
 .hidden {

@@ -35,6 +35,58 @@ body {
     }
 }
 
+.menu {
+    align-self: center;
+    width: 2.5%;
+}
+
+.open-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    background-color: $dark-gray;
+}
+
+.project-link {
+    margin: 10px 0;
+    text-decoration: none;
+    @include navigation;
+    font-size: 3vw;
+    color: $white;
+    &--0, &--6 {
+        &:hover {
+            color: $dark;
+        }
+    }
+    &--1 {
+        &:hover {
+            color: $red;
+        }
+    }
+    &--2 {
+        &:hover {
+            color: $green;
+        }
+    }
+    &--3 {
+        &:hover {
+            color: $blue;
+        }
+    }
+    &--4 {
+        &:hover {
+            color: $orange;
+        }
+    }
+    &--5 {
+        &:hover {
+            color: $violet;
+        }
+    }
+}
+
 .bg--default {
     background-color: $light-gray;
 }

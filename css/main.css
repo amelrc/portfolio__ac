@@ -93,6 +93,43 @@ body {
   .logo__left, .logo__right {
     width: 100%; }
 
+.menu {
+  align-self: center;
+  width: 2.5%; }
+
+.open-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  background-color: #474554; }
+
+.project-link {
+  margin: 10px 0;
+  text-decoration: none;
+  display: flex;
+  margin: 0 30px;
+  align-self: center;
+  font-family: Catamaran;
+  font-weight: 800;
+  letter-spacing: 7px;
+  color: #ffffff;
+  font-size: 3vw;
+  color: #ffffff; }
+  .project-link--0:hover, .project-link--6:hover {
+    color: #212027; }
+  .project-link--1:hover {
+    color: #F85959; }
+  .project-link--2:hover {
+    color: #a2ff51; }
+  .project-link--3:hover {
+    color: #51a2ff; }
+  .project-link--4:hover {
+    color: #ffae51; }
+  .project-link--5:hover {
+    color: #ae51ff; }
+
 .bg--default {
   background-color: #eeeeef; }
 
@@ -494,6 +531,10 @@ body {
   height: 9%;
   position: relative;
   width: 6%; }
+  .cross--menu {
+    margin-bottom: 50px;
+    height: 40px;
+    cursor: pointer; }
 
 .hidden {
   opacity: 0; }
@@ -597,7 +638,7 @@ body {
   .section__six {
     display: flex;
     justify-content: center;
-    padding: 120px 0; }
+    padding: 60px 0; }
 
 .project-title {
   font-family: "Catamaran";
