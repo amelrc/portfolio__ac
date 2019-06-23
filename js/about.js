@@ -1,6 +1,39 @@
 
 let cross = document.querySelector('.cross');
 let myPicture = document.querySelector('.picture');
+const crossMenu = document.querySelector('.cross--menu');
+const menu = document.querySelector('.menu');
+const wrapper = document.querySelector('.wrapper__left-side--full');
+
+menu.addEventListener('click', openMenu);
+crossMenu.addEventListener('click', closeMenu);
+
+function openMenu() {
+
+    let openMenu = document.querySelector('.open-menu');
+
+    openMenu.classList.remove('hidden-test');
+    wrapper.style.display = 'none';
+  
+}
+
+function closeMenu() {
+
+    let openMenu = document.querySelector('.open-menu');
+
+    openMenu.classList.add('hidden-test');
+    wrapper.style.display = 'flex';
+
+}
+
+
+
+
+
+
+
+
+
 
 setTimeout(function(){
   let header = document.querySelector('.about__header');

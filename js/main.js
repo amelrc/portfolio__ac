@@ -37,16 +37,6 @@ function closeMenu() {
 
 }
 
-
-
-
-
-
-
-
-
-
-
 projects.forEach(project => {
     project.addEventListener('click', (el) => navClick(el))
 });
