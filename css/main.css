@@ -256,7 +256,7 @@ body {
   width: 1%;
   height: 100%; }
   .project--0 {
-    background-color: transparent; }
+    visibility: hidden; }
   .project--1 {
     background-color: #F85959; }
     .project--1:hover {
@@ -300,8 +300,10 @@ body {
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
-        color: #ffffff; }
+        color: #ffffff;
+        text-transform: uppercase; }
   .project--4 {
+    visibility: hidden;
     background-color: #ffae51; }
     .project--4:hover {
       display: flex;
@@ -316,6 +318,7 @@ body {
         letter-spacing: 7px;
         color: #ffffff; }
   .project--5 {
+    visibility: hidden;
     background-color: #ae51ff; }
     .project--5:hover {
       display: flex;
@@ -343,6 +346,9 @@ body {
   .content {
     flex-direction: column;
     width: auto; }
+  .cross--menu {
+    margin-bottom: 100px;
+    margin-top: -200px; }
   .text--outline {
     font-size: 7vw; }
   .text--full {
@@ -361,6 +367,11 @@ body {
     width: auto; }
     .content__right {
       margin: 14px 0; }
+  .open-menu {
+    justify-content: space-evenly; }
+  .project-link {
+    font-size: 7vw;
+    text-align: center; }
   .text--outline {
     font-size: 12vw; }
   .text--full {
@@ -375,7 +386,7 @@ body {
     width: 10%; } }
 
 .background--1 {
-  background-image: url("../../img/moon.png");
+  background-image: url("../../img/rubrics-1.png");
   background-size: cover; }
 
 .background--2 {
@@ -396,7 +407,7 @@ body {
 
 .wrapper__left-side {
   align-items: flex-end;
-  background-color: rgba(50, 130, 10, 0.9);
+  background-color: #51a2ff;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -405,7 +416,7 @@ body {
   transition: background-color 0.5s, width 0.5s;
   width: 35%; }
   .wrapper__left-side--full {
-    background-color: #32820A;
+    background-color: #51a2ff;
     display: flex;
     height: 100%;
     justify-content: space-between;
@@ -462,7 +473,7 @@ body {
     margin: 0; }
   .about__sub-header {
     align-self: center;
-    color: #212027;
+    color: #ffffff;
     font-size: 1.9vw;
     font-stretch: normal;
     font-style: normal;
@@ -486,7 +497,10 @@ body {
     visibility: hidden;
     position: absolute;
     margin-left: 100px;
-    margin-top: -30px; }
+    margin-top: -30px;
+    overflow: scroll;
+    height: 200px;
+    width: 80%; }
 
 .test {
   position: relative; }
@@ -555,7 +569,10 @@ body {
       font-size: 3vw;
       width: 90%; }
     .about__content {
-      font-size: 2.2vw; }
+      font-size: 2.2vw;
+      overflow: scroll;
+      height: 390px;
+      width: 85%; }
   .italic--about {
     font-size: 8vw; } }
 
@@ -568,13 +585,14 @@ body {
     align-self: flex-end;
     width: 16%; }
   .test {
-    margin-top: -60%; }
+    margin-top: -40%; }
   .test2 {
     margin-top: -30%; }
+  .test3 {
+    margin-top: -20%; }
   .about {
     width: 90%;
     height: 70%;
-    overflow: scroll;
     margin-top: -40%; }
     .about__header {
       font-size: 15vw; }
@@ -585,7 +603,10 @@ body {
     .about__content {
       font-size: 5vw;
       width: 100%;
-      margin-left: 0; }
+      margin-left: 0;
+      overflow: scroll;
+      height: 170px;
+      margin: 0; }
   .italic--about {
     font-size: 15vw; } }
 
@@ -596,7 +617,7 @@ body {
   background-color: #212027; }
 
 .section {
-  background-image: url("../../img/moon.png");
+  background-image: url("../../img/rubrics-2.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -621,7 +642,7 @@ body {
     justify-content: center;
     padding: 170px 0; }
   .section__three {
-    background-image: url("../../img/butterflies.jpg");
+    background-color: #474554;
     display: flex;
     justify-content: center;
     padding: 100px 0; }
@@ -656,19 +677,27 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #373540; }
+  color: #373540;
+  font-style: italic; }
 
 .project-skill {
-  font-family: PlayfairDisplay;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Catamaran;
   font-size: 20px;
-  font-style: italic;
   font-weight: bold;
   margin: 10px 0 30px;
-  color: #51a2ff; }
+  color: #F85959; }
+  .project-skill__skill {
+    margin: 0;
+    margin-right: 5px;
+    text-transform: uppercase; }
+    .project-skill__skill::after {
+      content: "-"; }
 
 .project-text {
   font-family: "Catamaran";
-  font-size: 14px;
+  font-size: 1.1vw;
   font-weight: 100;
   font-style: normal;
   line-height: normal;
@@ -676,12 +705,10 @@ body {
   color: #373540; }
 
 .image-intro {
-  padding: 0 25px;
-  width: 35%;
-  height: 35%; }
+  width: 70%; }
 
 .image-desktop {
-  box-shadow: -20px 20px 0px 0px rgba(71, 69, 84, 0.4);
+  box-shadow: -20px 20px 0px 0px rgba(248, 89, 89, 0.5);
   width: 80%;
   height: 60%; }
 
@@ -703,7 +730,7 @@ body {
   height: 60%; }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .logo {
+  .logo, .menu {
     width: 3.5%; }
   .section__cero {
     height: 24%; }
@@ -720,7 +747,9 @@ body {
     border: 15px solid #212027;
     border-radius: 15px; }
   .image-iphone--l, .image-iphone--r {
-    display: none; } }
+    display: none; }
+  .project-text {
+    font-size: 2vw; } }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .image-ipad {
@@ -736,7 +765,7 @@ body {
     border-radius: 7px; } }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
-  .logo {
+  .logo, .menu {
     width: 7.5%; }
   .section__one {
     padding: 50px 0;
@@ -768,10 +797,12 @@ body {
     display: none; }
   .image-bye {
     width: 90%;
-    height: 60%; } }
+    height: 60%; }
+  .project-text {
+    font-size: 4vw; } }
 
 @media only screen and (max-width: 812px) and (orientation: landscape) {
-  .logo {
+  .logo, .menu {
     width: 3.5%; }
   .section__one {
     padding: 50px 0;

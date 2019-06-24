@@ -2,7 +2,7 @@
 
 .wrapper__left-side {
     align-items: flex-end;
-    background-color: $green-bg;
+    background-color: $blue;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -11,7 +11,7 @@
     transition: background-color 0.5s, width 0.5s;
     width: 35%;
     &--full {
-        background-color: $green-about;
+        background-color: $blue;
         display: flex;
         height: 100%;
         justify-content: space-between;
@@ -21,7 +21,6 @@
 }
 
 .bg-about {
-    // padding-bottom: 26px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -62,11 +61,13 @@
     height: 80%;
     z-index: 1;
     // margin-right: 120px;
+
     &__bg-about {
         font-size: 100px;
         position: absolute;
         text-align: center;
     }
+
     &__header{
         color: $white;
         font-size: 6vw;
@@ -79,11 +80,11 @@
         position: absolute;
         // margin-top: 200px;
         margin: 0;
-
     }
+
     &__sub-header {
         align-self: center;
-        color: $dark;
+        color: $white;
         font-size: 1.9vw;
         font-stretch: normal;
         font-style: normal;
@@ -92,12 +93,12 @@
         line-height: 1.2;
         // margin: 20px 0;
         width: 70%;
-        
         visibility: hidden;
         // transition: margin-top 1s ease, visibility 1s ease;
         position: absolute;
         margin-left: 100px;
     }
+
     &__content {
         align-self: flex-end;
         color: #f9f9f9;
@@ -114,6 +115,9 @@
         position: absolute;
         margin-left: 100px;
         margin-top: -30px;
+        overflow: scroll;
+        height: 200px; 
+        width: 80%;
     }
 }
 
@@ -123,12 +127,10 @@
 
 .test2 {
     position: relative;
-    // margin-left: 100px;
 }
 
 .test3 {
     position: relative;
-    // margin-left: 100px;
 }
 
 .italic {
@@ -148,8 +150,9 @@
         font-size: 35vw;
         font-weight: 900;
         line-height: 0.3;
-        text-transform: lowercase;
+        text-transform: lowercase; 
     }
+
     &--about {
         font-family: Playfair Display;
         font-size: 7vw;
@@ -204,6 +207,9 @@ and (orientation : portrait) {
         }
         &__content {
             font-size: 2.2vw;
+            overflow: scroll;
+            height: 390px;
+            width: 85%;
         }
     }
     .italic--about {
@@ -228,16 +234,20 @@ and (orientation : portrait) {
     }
 
     .test {
-        margin-top: -60%;
+        margin-top: -40%;
     }
     .test2 {
         margin-top: -30%;
     }
 
+    .test3 {
+        margin-top: -20%;
+    }
+
     .about {
         width: 90%;
         height: 70%;
-        overflow: scroll;
+        
         margin-top: -40%;
         &__header {
             font-size: 15vw;
@@ -252,6 +262,9 @@ and (orientation : portrait) {
             font-size: 5vw;
             width: 100%;
             margin-left: 0;
+            overflow: scroll;
+            height: 170px;
+            margin: 0;
         }
     }
     .italic--about {

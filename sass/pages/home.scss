@@ -238,7 +238,7 @@ body {
     width: 1%;
     height: 100%;
     &--0 {
-        background-color: transparent;
+        visibility: hidden;
     }
     &--1 {
         background-color: $red;
@@ -272,10 +272,12 @@ body {
             width: auto;
             .p-name {
                 @include navigation;
+                text-transform: uppercase;
             }
         }
     }
     &--4 {
+        visibility: hidden;
         background-color: $orange;
         &:hover {
             display: flex;
@@ -287,6 +289,7 @@ body {
         }
     }
     &--5 {
+        visibility: hidden;
         background-color: $violet;
         &:hover {
             display: flex;
@@ -325,6 +328,12 @@ and (orientation : portrait){
         flex-direction: column;
         width: auto;
     }
+
+    .cross--menu {
+        margin-bottom: 100px;
+        margin-top: -200px;
+    }
+
     .text--outline {
         font-size: 7vw;
     }
@@ -354,6 +363,16 @@ and (orientation : portrait) {
             margin: 14px 0;
         }
     }
+
+    .open-menu {
+        justify-content: space-evenly;
+    }
+
+    .project-link {
+        font-size: 7vw;
+        text-align: center;
+    }
+
     .text--outline {
         font-size: 12vw;
     }
@@ -373,16 +392,6 @@ and (orientation : portrait) {
 
     .project {
         width: 10%;
-        // &--1 {
-        //     background-color: $red;
-        //     .p-name {
-        //         // @include navigation;
-        //         // width: auto;
-        //         // display: flex;
-        //         // align-items: center;
-        //         // display: none;
-        //     }  
-        // }
     }
 }
 
@@ -427,7 +436,7 @@ and (orientation : portrait) {
 // }
 
 .background--1 {
-    background-image: url('../../img/moon.png');
+    background-image: url('../../img/rubrics-1.png');
     background-size: cover;
 }
 .background--2 {
@@ -446,3 +455,11 @@ and (orientation : portrait) {
     background-image: url('../../img/cat.png');
     background-size: cover;
 }
+
+// .projects-header {
+//     transform: rotate(270deg);
+//     @include navigation;
+//     margin: 0;
+//     align-self: flex-end;
+//     color:$dark-gray;
+// }

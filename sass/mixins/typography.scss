@@ -9,7 +9,7 @@
     @include TypoStyle('Catamaran', 20px, 600, normal, normal, normal, $darker-gray);
 }
 @mixin Text {
-    @include TypoStyle('Catamaran', 14px, 100, normal, normal, normal, $darker-gray);
+    @include TypoStyle('Catamaran', 1.1vw, 100, normal, normal, normal, $darker-gray);
 }
 
 
