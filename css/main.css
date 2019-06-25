@@ -117,18 +117,23 @@ body {
   color: #ffffff;
   font-size: 3vw;
   color: #ffffff; }
-  .project-link--0:hover, .project-link--6:hover {
+  .project-link--0:hover {
     color: #212027; }
   .project-link--1:hover {
     color: #F85959; }
   .project-link--2:hover {
-    color: #a2ff51; }
-  .project-link--3:hover {
     color: #51a2ff; }
+  .project-link--3:hover {
+    color: #a2ff51; }
   .project-link--4:hover {
     color: #ffae51; }
   .project-link--5:hover {
     color: #ae51ff; }
+  .project-link--6 {
+    display: flex;
+    width: 130px;
+    justify-content: space-around;
+    margin-top: 20px; }
 
 .bg--default {
   background-color: #eeeeef; }
@@ -273,7 +278,7 @@ body {
         color: #ffffff;
         text-transform: uppercase; }
   .project--2 {
-    background-color: #a2ff51; }
+    background-color: #51a2ff; }
     .project--2:hover {
       display: flex;
       align-items: center;
@@ -288,7 +293,7 @@ body {
         color: #ffffff;
         text-transform: uppercase; }
   .project--3 {
-    background-color: #51a2ff; }
+    background-color: #a2ff51; }
     .project--3:hover {
       display: flex;
       align-items: center;
@@ -390,11 +395,11 @@ body {
   background-size: cover; }
 
 .background--2 {
-  background-image: url("../../img/me.png");
+  background-image: url("../../img/wps-1.png");
   background-size: cover; }
 
 .background--3 {
-  background-image: url("../../img/p3.jpg");
+  background-image: url("../../img/tss-1.jpg");
   background-size: cover; }
 
 .background--4 {
@@ -442,7 +447,7 @@ body {
 
 .picture {
   align-self: flex-end;
-  background-image: url("../img/me.png");
+  background-image: url("../../img/about.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 30%;
@@ -572,7 +577,7 @@ body {
       font-size: 2.2vw;
       overflow: scroll;
       height: 390px;
-      width: 85%; }
+      width: 90%; }
   .italic--about {
     font-size: 8vw; } }
 
@@ -605,8 +610,7 @@ body {
       width: 100%;
       margin-left: 0;
       overflow: scroll;
-      height: 170px;
-      margin: 0; }
+      height: 250px; }
   .italic--about {
     font-size: 15vw; } }
 
@@ -660,6 +664,10 @@ body {
     display: flex;
     justify-content: center;
     padding: 60px 0; }
+  .section--2 {
+    background-image: url("../../img/wps-2.png"); }
+  .section--3 {
+    background-image: url("../../img/tss-2.jpg"); }
 
 .project-title {
   font-family: "Catamaran";
@@ -694,6 +702,10 @@ body {
     text-transform: uppercase; }
     .project-skill__skill::after {
       content: "-"; }
+    .project-skill__skill--2 {
+      color: #51a2ff; }
+    .project-skill__skill--3 {
+      color: #a2ff51; }
 
 .project-text {
   font-family: "Catamaran";
@@ -708,7 +720,7 @@ body {
   width: 70%; }
 
 .image-desktop {
-  box-shadow: -20px 20px 0px 0px rgba(248, 89, 89, 0.5);
+  box-shadow: -20px 20px 0px 0px #373540;
   width: 80%;
   height: 60%; }
 

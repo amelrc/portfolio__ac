@@ -55,7 +55,7 @@ body {
     @include navigation;
     font-size: 3vw;
     color: $white;
-    &--0, &--6 {
+    &--0 {
         &:hover {
             color: $dark;
         }
@@ -67,12 +67,12 @@ body {
     }
     &--2 {
         &:hover {
-            color: $green;
+            color: $blue;
         }
     }
     &--3 {
         &:hover {
-            color: $blue;
+            color: $green;
         }
     }
     &--4 {
@@ -84,6 +84,12 @@ body {
         &:hover {
             color: $violet;
         }
+    }
+    &--6 {
+        display: flex;
+        width: 130px;
+        justify-content: space-around;
+        margin-top: 20px;
     }
 }
 
@@ -253,7 +259,7 @@ body {
         }
     }
     &--2 {
-        background-color: $green;
+        background-color: $blue;
         &:hover {
             display: flex;
             align-items: center;
@@ -265,7 +271,7 @@ body {
         }
     }
     &--3 {
-        background-color: $blue;
+        background-color: $green;
         &:hover {
             display: flex;
             align-items: center;
@@ -440,11 +446,11 @@ and (orientation : portrait) {
     background-size: cover;
 }
 .background--2 {
-    background-image: url('../../img/me.png');
+    background-image: url('../../img/wps-1.png');
     background-size: cover;
 }
 .background--3 {
-    background-image: url('../../img/p3.jpg');
+    background-image: url('../../img/tss-1.jpg');
     background-size: cover;
 }
 .background--4 {

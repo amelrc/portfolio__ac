@@ -41,7 +41,7 @@
 
 .picture {
     align-self: flex-end;
-    background-image: url('../img/me.png');
+    background-image: url('../../img/about.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 30%;
@@ -181,6 +181,21 @@
 .hidden {
     opacity: 0;
 }
+.social {
+    // width: 50px;
+    // &:hover {
+    //     background-image: url('../../img/link-dark.png');
+        
+    //     cursor: pointer;
+    // }
+    // &--1 {
+    //     &:hover {
+    //         background-image: url('../../img/gh.png');
+            
+    //         cursor: pointer;
+    //     }
+    // }
+}
 
 @media only screen 
 and (min-width : 768px) 
@@ -209,7 +224,7 @@ and (orientation : portrait) {
             font-size: 2.2vw;
             overflow: scroll;
             height: 390px;
-            width: 85%;
+            width: 90%;
         }
     }
     .italic--about {
@@ -263,8 +278,7 @@ and (orientation : portrait) {
             width: 100%;
             margin-left: 0;
             overflow: scroll;
-            height: 170px;
-            margin: 0;
+            height: 250px;
         }
     }
     .italic--about {
