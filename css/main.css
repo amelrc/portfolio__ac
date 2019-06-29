@@ -278,7 +278,8 @@ body {
         color: #ffffff;
         text-transform: uppercase; }
   .project--2 {
-    background-color: #51a2ff; }
+    background-color: #51a2ff;
+    visibility: hidden; }
     .project--2:hover {
       display: flex;
       align-items: center;
