@@ -13,7 +13,7 @@ function openMenu() {
     let openMenu = document.querySelector('.open-menu');
 
     openMenu.classList.remove('hidden-test');
-    wrapper.style.display = 'none';
+    // wrapper.style.display = 'none';
   
 }
 

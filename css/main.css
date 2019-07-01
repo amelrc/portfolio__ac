@@ -411,23 +411,11 @@ body {
   background-image: url("../../img/cat.png");
   background-size: cover; }
 
-.wrapper__left-side {
-  align-items: flex-end;
-  background-color: #51a2ff;
+.wrapper-content {
   display: flex;
-  flex-direction: column;
+  background-color: #51a2ff;
   height: 100%;
-  justify-content: space-between;
-  position: relative;
-  transition: background-color 0.5s, width 0.5s;
-  width: 35%; }
-  .wrapper__left-side--full {
-    background-color: #51a2ff;
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center; }
+  width: 100%; }
 
 .bg-about {
   color: white;
@@ -443,16 +431,11 @@ body {
   position: absolute;
   text-transform: uppercase;
   width: 100%;
-  opacity: 0;
-  transition: opacity 1s ease; }
+  opacity: 0; }
 
 .picture {
   align-self: flex-end;
-  background-image: url("../../img/about.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 30%;
-  width: 25%;
+  height: 35%;
   z-index: 1;
   visibility: hidden; }
 
@@ -492,14 +475,15 @@ body {
     margin-left: 100px; }
   .about__content {
     align-self: flex-end;
-    color: #f9f9f9;
-    font-size: 1.2vw;
-    font-stretch: normal;
+    font-family: "Catamaran";
+    font-size: 1.1vw;
+    font-weight: 100;
     font-style: normal;
-    font-weight: normal;
+    line-height: normal;
     letter-spacing: normal;
-    line-height: 1.6;
-    width: 70%;
+    color: #373540;
+    color: #ffffff;
+    font-weight: normal;
     visibility: hidden;
     position: absolute;
     margin-left: 100px;
@@ -508,13 +492,7 @@ body {
     height: 200px;
     width: 80%; }
 
-.test {
-  position: relative; }
-
-.test2 {
-  position: relative; }
-
-.test3 {
+.wrapper-header, .wrapper-sub-header, .wrapper-text {
   position: relative; }
 
 .italic {
