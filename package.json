@@ -25,5 +25,8 @@
     "gulp-uglify": "^3.0.2",
     "node-sass": "^4.11.0",
     "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "hexo-deployer-git": "^1.0.0"
   }
 }
