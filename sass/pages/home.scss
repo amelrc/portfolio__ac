@@ -447,26 +447,18 @@ and (orientation : portrait) {
     background-size: cover;
 }
 .background--2 {
-    background-image: url('../../img/wps-1.png');
+    background-image: url('../img/wps-1.png');
     background-size: cover;
 }
 .background--3 {
-    background-image: url('../../img/tss-1.jpg');
+    background-image: url('../img/tss-1.jpg');
     background-size: cover;
 }
 .background--4 {
-    background-image: url('../../img/butterflies.jpg');
+    background-image: url('../img/butterflies.jpg');
     background-size: cover;
 }
 .background--5 {
-    background-image: url('../../img/cat.png');
+    background-image: url('../img/cat.png');
     background-size: cover;
 }
-
-// .projects-header {
-//     transform: rotate(270deg);
-//     @include navigation;
-//     margin: 0;
-//     align-self: flex-end;
-//     color:$dark-gray;
-// }
