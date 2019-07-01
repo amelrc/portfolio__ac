@@ -1,0 +1,17 @@
+
+//Variables
+@import "variables/colors.scss";
+
+//Mixins
+@import "mixins/mixins.scss";
+@import "mixins/typography.scss";
+
+//Components
+@import "components/left__side.scss";
+@import "components/projects.scss";
+
+//Pages
+@import "pages/home.scss";
+@import "pages/about.scss";
+@import "pages/project1.scss";
+
