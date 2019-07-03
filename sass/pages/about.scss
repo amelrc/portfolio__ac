@@ -27,7 +27,7 @@
 
 .picture {
     align-self: flex-end;
-    height: 35%;
+    width: 25%;
     z-index: 1;
     visibility: hidden;
     // transition: visibility 1s, margin-bottom 1s;
@@ -149,7 +149,7 @@ and (max-width : 1024px)
 and (orientation : portrait) { 
 
     .picture {
-        height: 20%;
+        height: auto;
     }
     
     .about {
