@@ -19,21 +19,20 @@ menu.addEventListener('click', openMenu);
 crossMenu.addEventListener('click', closeMenu);
 
 function openMenu() {
-
+    
     let openMenu = document.querySelector('.open-menu');
-
-    openMenu.classList.remove('hidden-test');
-    headerBody.classList.add('hidden-test');
-    wrapperProjects.classList.add('hidden-test');
+    openMenu.classList.remove('closed-menu');
+    // headerBody.classList.add('closed-menu');
+    // wrapperProjects.classList.add('closed-menu');
 }
 
 function closeMenu() {
 
     let openMenu = document.querySelector('.open-menu');
 
-    openMenu.classList.add('hidden-test');
-    headerBody.classList.remove('hidden-test');
-    wrapperProjects.classList.remove('hidden-test');
+    openMenu.classList.add('closed-menu');
+    // headerBody.classList.remove('closed-menu');
+    // wrapperProjects.classList.remove('closed-menu');
 
 }
 
