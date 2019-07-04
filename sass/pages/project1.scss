@@ -35,7 +35,6 @@
         padding: 110px 0;
     }
     &__three {
-        // background-image: url('../../img/butterflies.jpg');
         background-color: $dark-gray;
         display: flex;
         justify-content: center;
@@ -301,5 +300,4 @@ and (orientation : landscape) {
     .image-iphone--l,.image-iphone--r {
         display: none;
     }
-
 }

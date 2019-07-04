@@ -19,21 +19,17 @@ menu.addEventListener('click', openMenu);
 crossMenu.addEventListener('click', closeMenu);
 
 function openMenu() {
-    
     let openMenu = document.querySelector('.open-menu');
     openMenu.classList.remove('closed-menu');
-    // headerBody.classList.add('closed-menu');
-    // wrapperProjects.classList.add('closed-menu');
+    headerBody.classList.add('closed-menu');
+    wrapperProjects.classList.add('closed-menu');
 }
 
 function closeMenu() {
-
     let openMenu = document.querySelector('.open-menu');
-
     openMenu.classList.add('closed-menu');
-    // headerBody.classList.remove('closed-menu');
-    // wrapperProjects.classList.remove('closed-menu');
-
+    headerBody.classList.remove('closed-menu');
+    wrapperProjects.classList.remove('closed-menu');
 }
 
 projects.forEach(project => {
