@@ -613,7 +613,7 @@ body {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-    padding: 170px 0; }
+    padding: 110px 0; }
   .section__three {
     background-color: #474554;
     display: flex;
@@ -718,6 +718,8 @@ body {
   .section__one {
     width: 60%;
     padding: 100px 60px; }
+  .section__two {
+    padding: 80px 0; }
   .image-ipad {
     height: 100%;
     border: 15px solid #212027;
@@ -752,7 +754,10 @@ body {
     padding: 50px 0;
     width: 100%; }
   .section__two {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 20px 0; }
+  .section__three {
+    padding: 30px 0; }
   .project-title, .project-skill, .project-year, .project-text {
     padding: 0 20px; }
   .image-desktop {

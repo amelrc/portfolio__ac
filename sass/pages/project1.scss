@@ -32,7 +32,7 @@
         overflow-x: hidden;
         display: flex;
         justify-content: center;
-        padding: 170px 0;
+        padding: 110px 0;
     }
     &__three {
         // background-image: url('../../img/butterflies.jpg');
@@ -148,6 +148,9 @@ and (orientation : portrait) {
             width: 60%;
             padding: 100px 60px;
         }
+        &__two {
+            padding: 80px 0;
+        }
     }
 
     .image-ipad {
@@ -205,6 +208,11 @@ and (orientation : portrait) {
 
     .section__two {
         flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .section__three {
+        padding: 30px 0;
     }
 
     .project-title,.project-skill,.project-year,.project-text {

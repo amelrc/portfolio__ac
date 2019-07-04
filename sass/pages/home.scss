@@ -398,46 +398,6 @@ and (orientation : portrait) {
     }
 }
 
-// @media only screen 
-// and (max-width : 812px)
-// and (orientation : landscape) {
-//     .content {
-//         flex-direction: column;
-//         width: auto;
-//     }
-//     .text--outline {
-//         font-size: 12vw;
-//     }
-//     .text--full {
-//         font-size: 9vw;
-//     }
-
-//     .text--ampersand {
-//         margin-right: 50px;
-//         margin-top: 140px;
-//         font-size: 16vw;
-//     }
-
-//     .arrow {
-//         margin-bottom: 50px;
-//     }
-
-//     .project {
-//         width: 10%;
-//         &--1 {
-//             background-color: $red;
-//             .p-name {
-//                 @include navigation;
-//                 width: auto;
-//                 display: flex;
-//                 align-items: center;
-//                 display: none;
-//             }  
-//         }
-//     }
-
-// }
-
 .background--1 {
     background-image: url('../img/rubrics-1.png');
     background-size: cover;
