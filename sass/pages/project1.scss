@@ -26,7 +26,7 @@
         padding: 100px 200px;
     }
     &__two {
-        background-color: $light-gray;
+        background-color: $dark-gray;
         width: 100%;
         overflow-y: auto;
         overflow-x: hidden;
@@ -35,7 +35,7 @@
         padding: 110px 0;
     }
     &__three {
-        background-color: $dark-gray;
+        background-color: $light-gray;
         display: flex;
         justify-content: center;
         padding: 100px 0;

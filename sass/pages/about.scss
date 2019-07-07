@@ -60,12 +60,6 @@
     margin-left: 130px;
 }
 
-.bg-about {
-    font-size: 100px;
-    position: absolute;
-    text-align: center;
-}
-
 .wrapper-header, .wrapper-sub-header, .wrapper-text {
     position: relative;
 }
@@ -120,7 +114,7 @@
     position: absolute;
     text-transform: uppercase;
     width: 100%;
-    opacity: 0;
+    opacity: 0.1;
     // transition: opacity 1s ease; 
 }
 
@@ -175,6 +169,64 @@ and (orientation : portrait) {
     .italic--about {
         font-size: 8vw;
     }
+}
+
+@media only screen 
+and (max-width : 414px) 
+and (orientation : portrait) { 
+
+    .wrapper-content {
+        flex-direction: column;
+    }
+
+    .picture {
+        width: 100%;
+    }
+
+    .cross {
+        width: 30px;
+        margin: 14px;
+    }
+
+    .wrapper-header {
+        margin-bottom: 0;
+    }
+
+    .wrapper-text {
+        height: 300px;
+        width: 100%;
+        margin-top: 60px;
+        overflow: scroll;
+    }
+
+    .about {
+        width: 90%;
+        height: 70%;
+        margin-top: -90px;
+        z-index: 1;
+        align-self: center;
+        display: block;
+    }
+
+    .header-about {
+            font-size: 15vw;
+    }
+
+    .sub-header-about {
+            font-size: 5.7vw;
+            width: 100%;
+            margin-left: 0;
+    }
+
+    .content-about {
+            font-size: 4vw;
+            margin-left: 0;
+    }
+    
+    .italic--about {
+        font-size: 15vw;
+    }
+    
 }
 
 @media only screen 
@@ -233,3 +285,21 @@ and (orientation : portrait) {
         font-size: 15vw;
     }
 }
+
+@media only screen 
+and (max-width : 320px) 
+and (orientation : portrait) { 
+
+
+    .wrapper-header {
+        margin-bottom: 10px;
+    }
+
+    .wrapper-text {
+        height: 225px;
+        margin-top: 50px;
+    }
+
+    
+}
+

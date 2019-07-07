@@ -89,13 +89,13 @@ body {
 
 .logo {
   align-self: center;
-  width: 2.5%; }
+  width: 30px; }
   .logo__left, .logo__right {
     width: 100%; }
 
 .menu {
   align-self: center;
-  width: 2.5%; }
+  width: 30px; }
 
 .open-menu {
   display: flex;
@@ -134,6 +134,18 @@ body {
     width: 130px;
     justify-content: space-around;
     margin-top: 20px; }
+
+.background--1 {
+  background-image: url("../img/rubrics-1.png");
+  background-size: cover; }
+
+.background--2 {
+  background-image: url("../img/wps-1.png");
+  background-size: cover; }
+
+.background--3 {
+  background-image: url("../img/tss-1.jpg");
+  background-size: cover; }
 
 .bg--default {
   background-color: #eeeeef; }
@@ -359,14 +371,39 @@ body {
   .project {
     width: 5%; } }
 
+@media only screen and (min-width: 414px) and (orientation: portrait) {
+  .content {
+    flex-direction: column;
+    width: auto; }
+    .content__right {
+      margin: 14px 0; }
+  .text--ampersand {
+    margin-right: 110px;
+    margin-top: 120px;
+    font-size: 16vw; }
+  .arrow__image {
+    margin-bottom: 60px; }
+  .text--outline {
+    font-size: 8vw; }
+  .text--full {
+    font-size: 7vw; }
+  .project {
+    width: 10%; }
+  .project-link {
+    font-size: 8vw; } }
+
 @media only screen and (max-width: 375px) and (orientation: portrait) {
   .content {
     flex-direction: column;
     width: auto; }
     .content__right {
       margin: 14px 0; }
+  .text--ampersand {
+    margin-right: 70px;
+    margin-top: 150px;
+    font-size: 20vw; }
   .arrow__image {
-    margin-bottom: 20px; }
+    margin-bottom: 60px; }
   .project-link {
     font-size: 7vw;
     text-align: center; }
@@ -374,24 +411,14 @@ body {
     font-size: 12vw; }
   .text--full {
     font-size: 9vw; }
-  .text--ampersand {
-    margin-right: 70px;
-    margin-top: 100px;
-    font-size: 16vw; }
   .project {
     width: 10%; } }
 
-.background--1 {
-  background-image: url("../img/rubrics-1.png");
-  background-size: cover; }
-
-.background--2 {
-  background-image: url("../img/wps-1.png");
-  background-size: cover; }
-
-.background--3 {
-  background-image: url("../img/tss-1.jpg");
-  background-size: cover; }
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .arrow__image {
+    margin-bottom: 10px; }
+  .project-link {
+    font-size: 6vw; } }
 
 .wrapper-content {
   display: flex;
@@ -442,11 +469,6 @@ body {
   font-weight: normal;
   margin-left: 130px; }
 
-.bg-about {
-  font-size: 100px;
-  position: absolute;
-  text-align: center; }
-
 .wrapper-header, .wrapper-sub-header, .wrapper-text {
   position: relative; }
 
@@ -496,7 +518,7 @@ body {
   position: absolute;
   text-transform: uppercase;
   width: 100%;
-  opacity: 0; }
+  opacity: 0.1; }
 
 .wrapper-cross {
   align-self: center; }
@@ -530,6 +552,40 @@ body {
     margin-left: 100px; }
   .italic--about {
     font-size: 8vw; } }
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .wrapper-content {
+    flex-direction: column; }
+  .picture {
+    width: 100%; }
+  .cross {
+    width: 30px;
+    margin: 14px; }
+  .wrapper-header {
+    margin-bottom: 0; }
+  .wrapper-text {
+    height: 300px;
+    width: 100%;
+    margin-top: 60px;
+    overflow: scroll; }
+  .about {
+    width: 90%;
+    height: 70%;
+    margin-top: -90px;
+    z-index: 1;
+    align-self: center;
+    display: block; }
+  .header-about {
+    font-size: 15vw; }
+  .sub-header-about {
+    font-size: 5.7vw;
+    width: 100%;
+    margin-left: 0; }
+  .content-about {
+    font-size: 4vw;
+    margin-left: 0; }
+  .italic--about {
+    font-size: 15vw; } }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
   .wrapper-content {
@@ -565,6 +621,13 @@ body {
   .italic--about {
     font-size: 15vw; } }
 
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .wrapper-header {
+    margin-bottom: 10px; }
+  .wrapper-text {
+    height: 225px;
+    margin-top: 50px; } }
+
 .container--project {
   display: flex;
   flex-direction: column;
@@ -589,7 +652,7 @@ body {
     background-color: #eeeeef;
     padding: 100px 200px; }
   .section__two {
-    background-color: #eeeeef;
+    background-color: #474554;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -597,7 +660,7 @@ body {
     justify-content: center;
     padding: 110px 0; }
   .section__three {
-    background-color: #474554;
+    background-color: #eeeeef;
     display: flex;
     justify-content: center;
     padding: 100px 0; }

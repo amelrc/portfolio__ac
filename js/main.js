@@ -32,7 +32,7 @@ function closeMenu() {
     wrapperProjects.classList.remove('closed-menu');
 }
 
-//Nav
+// Projects Nav
 
 projects.forEach(project => {
     project.addEventListener('click', (el) => navClick(el))
@@ -48,16 +48,17 @@ projects.forEach(project => {
 });
 
 function navOutHover(el) {
-    // headerBody.classList.remove('hidden');
 
-    // modifiers.forEach(bgClass => {
+    headerBody.classList.remove('hidden');
 
-    //     const projectNumber = el.currentTarget.classList[1].charAt(9);
-    //     const classNumber = bgClass.charAt(12);
+    modifiers.forEach(bgClass => {
+
+        const projectNumber = el.currentTarget.classList[1].charAt(9);
+        const classNumber = bgClass.charAt(12);
         
-    //     (projectNumber === classNumber) ? bg1.classList.remove(bgClass) : bg1.classList.add('container__body');
+        (projectNumber === classNumber) ? bg1.classList.remove(bgClass) : bg1.classList.add('container__body');
         
-    // });
+    });
 }
 
 function navHover(el) {
@@ -67,16 +68,17 @@ function navHover(el) {
     setTimeout(function() {
         
         showLink.classList.remove('hidden');
+
     }, 10);
 
-    // modifiers.forEach(bgClass => {
+    modifiers.forEach(bgClass => {
 
-    //     const projectNumber = el.currentTarget.classList[1].charAt(9);
-    //     const classNumber = bgClass.charAt(12);
+        const projectNumber = el.currentTarget.classList[1].charAt(9);
+        const classNumber = bgClass.charAt(12);
         
-    //     (projectNumber === classNumber) ? bg1.classList.add(bgClass) : bg1.classList.remove(bgClass);
+        (projectNumber === classNumber) ? bg1.classList.add(bgClass) : bg1.classList.remove(bgClass);
         
-    // });
+    });
 }
 
 function navClick(el) {
@@ -99,17 +101,10 @@ function navClick(el) {
         const projectNumber = el.currentTarget.classList[1].charAt(9);
         const classNumber = bgClass.charAt(12);
         
-        if (projectNumber === classNumber) {
-        
-            bg1.classList.add(bgClass) 
-        } 
-        else {
-            bg1.classList.remove(bgClass);
-        }
+       (projectNumber === classNumber) ? bg1.classList.add(bgClass) : bg1.classList.remove(bgClass);
+       
     }); 
-    
 }
-
 
 bg1.addEventListener('click', (e) => {
 
@@ -127,7 +122,6 @@ bg1.addEventListener('click', (e) => {
                 }
             }
         })
-    }
-    
+    }   
 })
 

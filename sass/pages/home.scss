@@ -29,7 +29,7 @@ body {
 
 .logo {
     align-self: center;
-    width: 2.5%;
+    width: 30px;
     &__left, &__right {
         width: 100%;
     }
@@ -37,7 +37,7 @@ body {
 
 .menu {
     align-self: center;
-    width: 2.5%;
+    width: 30px;
 }
 
 .open-menu {
@@ -91,6 +91,19 @@ body {
         justify-content: space-around;
         margin-top: 20px;
     }
+}
+
+.background--1 {
+    background-image: url('../img/rubrics-1.png');
+    background-size: cover;
+}
+.background--2 {
+    background-image: url('../img/wps-1.png');
+    background-size: cover;
+}
+.background--3 {
+    background-image: url('../img/tss-1.jpg');
+    background-size: cover;
 }
 
 .bg--default {
@@ -354,6 +367,45 @@ and (orientation : portrait){
 }
 
 @media only screen 
+and (min-width : 414px) 
+and (orientation : portrait){
+
+    .content {
+        flex-direction: column;
+        width: auto;
+        &__right {
+            margin: 14px 0;
+        }
+    }
+
+    .text--ampersand {
+        margin-right: 110px;
+        margin-top: 120px;
+        font-size: 16vw;
+    }
+
+    .arrow__image {
+        margin-bottom: 60px;
+    }
+
+    .text--outline {
+        font-size: 8vw;
+    }
+
+    .text--full {
+        font-size: 7vw;
+    }
+
+    .project {
+        width: 10%;
+    }
+
+    .project-link {
+        font-size: 8vw;
+    }
+}
+
+@media only screen 
 and (max-width : 375px) 
 and (orientation : portrait) {
 
@@ -365,8 +417,14 @@ and (orientation : portrait) {
         }
     }
 
+    .text--ampersand {
+        margin-right: 70px;
+        margin-top: 150px;
+        font-size: 20vw;
+    }
+
     .arrow__image {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
 
     .project-link {
@@ -382,26 +440,20 @@ and (orientation : portrait) {
         font-size: 9vw;
     }
 
-    .text--ampersand {
-        margin-right: 70px;
-        margin-top: 100px;
-        font-size: 16vw;
-    }
-
     .project {
         width: 10%;
     }
 }
 
-.background--1 {
-    background-image: url('../img/rubrics-1.png');
-    background-size: cover;
-}
-.background--2 {
-    background-image: url('../img/wps-1.png');
-    background-size: cover;
-}
-.background--3 {
-    background-image: url('../img/tss-1.jpg');
-    background-size: cover;
+@media only screen 
+and (max-width : 320px) 
+and (orientation : portrait) {
+
+    .arrow__image {
+        margin-bottom: 10px;
+    }
+
+    .project-link {
+        font-size: 6vw;
+    }
 }
