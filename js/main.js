@@ -32,8 +32,11 @@ function closeMenu() {
     wrapperProjects.classList.remove('closed-menu');
 }
 
+//Nav
+
 projects.forEach(project => {
     project.addEventListener('click', (el) => navClick(el))
+
 });
 
 projects.forEach(project => {
@@ -45,52 +48,86 @@ projects.forEach(project => {
 });
 
 function navOutHover(el) {
-    headerBody.classList.remove('hidden');
+    // headerBody.classList.remove('hidden');
 
-    modifiers.forEach(bgClass => {
+    // modifiers.forEach(bgClass => {
 
-        const projectNumber = el.currentTarget.classList[1].charAt(9);
-        const classNumber = bgClass.charAt(12);
+    //     const projectNumber = el.currentTarget.classList[1].charAt(9);
+    //     const classNumber = bgClass.charAt(12);
         
-        (projectNumber === classNumber) ? bg1.classList.remove(bgClass) : bg1.classList.add('container__body');
+    //     (projectNumber === classNumber) ? bg1.classList.remove(bgClass) : bg1.classList.add('container__body');
         
-    });
+    // });
 }
 
 function navHover(el) {
 
     const showLink = el.currentTarget.children[0];
- 
+    headerBody.classList.add('hidden');
     setTimeout(function() {
-        headerBody.classList.add('hidden');
+        
         showLink.classList.remove('hidden');
     }, 10);
 
-    modifiers.forEach(bgClass => {
+    // modifiers.forEach(bgClass => {
 
-        const projectNumber = el.currentTarget.classList[1].charAt(9);
-        const classNumber = bgClass.charAt(12);
+    //     const projectNumber = el.currentTarget.classList[1].charAt(9);
+    //     const classNumber = bgClass.charAt(12);
         
-        (projectNumber === classNumber) ? bg1.classList.add(bgClass) : bg1.classList.remove(bgClass);
+    //     (projectNumber === classNumber) ? bg1.classList.add(bgClass) : bg1.classList.remove(bgClass);
         
-    });
+    // });
 }
 
 function navClick(el) {
-
-    const showLink = el.currentTarget.children[0];
-    
+    console.log(el.target)
+    console.log(el.curentTarget)
     headerBody.classList.add('hidden');
-    showLink.classList.remove('hidden');
-    
+   
+    projects.forEach(project => {
+
+        if (project === el.currentTarget) {
+            project.children[0].classList.remove('hidden')
+            console.log(project.children[0].classList)
+        } else if (project.children.length > 0) {
+            console.log(project.children[0].classList.add('hidden'))
+        }
+    })
+
     modifiers.forEach(bgClass => {
         
         const projectNumber = el.currentTarget.classList[1].charAt(9);
         const classNumber = bgClass.charAt(12);
-    
-        (projectNumber === classNumber) ? bg1.classList.add(bgClass) : bg1.classList.remove(bgClass);
         
-    });
+        if (projectNumber === classNumber) {
+        
+            bg1.classList.add(bgClass) 
+        } 
+        else {
+            bg1.classList.remove(bgClass);
+        }
+    }); 
+    
 }
 
+
+bg1.addEventListener('click', (e) => {
+
+    let projectBG = bg1.classList[1]
+
+    if (e.target === e.currentTarget || e.target === bg1.children[2]){
+
+        bg1.classList.remove(projectBG);
+        headerBody.classList.remove('hidden');
+
+        projects.forEach(project => {
+            if(project.children.length > 0) {
+                if(!project.children[0].classList.contains('hidden')) {
+                    project.children[0].classList.add('hidden');
+                }
+            }
+        })
+    }
+    
+})
 
