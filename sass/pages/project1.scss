@@ -194,6 +194,41 @@ and (orientation : landscape) {
 }
 
 @media only screen 
+and (max-width : 414px) 
+and (orientation : portrait) { 
+
+    .section__one {
+        padding:  50px 0;
+        width: 100%;
+    }
+    .project-title,.project-skill,.project-year,.project-text {
+        padding: 0 20px;
+    }
+
+    .project-text {
+        font-size: 4vw;
+    }
+
+    .image-ipad {
+        width: 80%;
+        height: 100%;
+        border: 7px solid #212027;
+        border-radius: 7px;
+        margin: 0 30px;
+    }
+
+    .image-iphone {
+        width: 60%;
+        height: 20%;
+        border: 5px solid #212027;
+        border-radius: 7px;
+    }
+    .image-iphone--l,.image-iphone--r {
+        display: none;
+    }
+}
+
+@media only screen 
 and (max-width : 375px) 
 and (orientation : portrait) { 
     .logo, .menu {
