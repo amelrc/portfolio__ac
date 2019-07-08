@@ -657,7 +657,8 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 110px 0; }
   .section__three {
     background-color: #eeeeef;
@@ -682,6 +683,18 @@ body {
     background-image: url("../img/wps-2.png"); }
   .section--3 {
     background-image: url("../img/tss-2.jpg"); }
+
+.btn-wrapper {
+  margin: 20px; }
+
+.project-btn {
+  cursor: pointer;
+  width: auto;
+  height: 70px;
+  margin: 0 20px;
+  align-self: center; }
+  .project-btn--left {
+    transform: rotate(180deg); }
 
 .project-title {
   font-family: "Catamaran";
@@ -796,6 +809,10 @@ body {
   .section__one {
     padding: 50px 0;
     width: 100%; }
+  .section__two {
+    padding: 50px 0; }
+  .project-btn {
+    height: 30px; }
   .project-title, .project-skill, .project-year, .project-text {
     padding: 0 20px; }
   .project-text {
@@ -852,7 +869,11 @@ body {
     width: 90%;
     height: 60%; }
   .project-text {
-    font-size: 4vw; } }
+    font-size: 4vw; }
+  .btn-wrapper {
+    margin: 0; }
+  .project-btn {
+    height: 30px; } }
 
 @media only screen and (max-width: 812px) and (orientation: landscape) {
   .logo, .menu {
