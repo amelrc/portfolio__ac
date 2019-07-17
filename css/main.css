@@ -124,7 +124,7 @@ body {
   .project-link--2:hover {
     color: #51a2ff; }
   .project-link--3:hover {
-    color: #a2ff51; }
+    color: #32820A; }
   .project-link--4:hover {
     color: #ffae51; }
   .project-link--5:hover {
@@ -161,31 +161,22 @@ body {
   display: flex;
   flex-direction: column;
   height: 50%;
-  position: relative; }
+  justify-content: center; }
+
+.content {
+  display: grid;
+  grid-template-columns: 50% repeat(2, 20%);
+  grid-template-rows: repeat(3, 1fr); }
+  .content__center {
+    grid-row-start: 2; }
+  .content__bottom {
+    grid-row-start: 3; }
 
 .ampersand {
   display: flex;
-  justify-content: flex-end;
   height: 100%;
-  align-items: center;
-  text-transform: uppercase; }
-
-.content {
-  display: flex;
-  align-self: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center; }
-  .content__left {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    justify-content: center; }
-  .content__right {
-    align-self: flex-end;
-    margin-bottom: 48px; }
+  width: 35%;
+  align-self: flex-end; }
 
 .text {
   margin: 0;
@@ -196,18 +187,31 @@ body {
   .text--outline {
     -webkit-text-stroke: 2px #F85959;
     color: transparent;
-    font-size: 5vw; }
+    font-size: 5vw;
+    justify-self: end; }
+  .text--center {
+    grid-row-start: 2; }
   .text--full {
     font-size: 4vw;
     color: #474554;
     align-self: flex-end;
     text-transform: uppercase; }
+    .text--full-center {
+      grid-column-start: 2;
+      grid-row-start: 2; }
+    .text--full-bottom {
+      grid-column-start: 2;
+      grid-row-start: 3;
+      margin-right: -270px; }
   .text--ampersand {
     font-size: 9vw;
     color: #ffffff;
-    margin-right: 360px;
-    margin-top: 120px;
-    font-family: Playfair Display; }
+    font-family: Playfair Display;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    align-self: end;
+    margin-top: -60px;
+    margin-bottom: -26px; }
   .text--right-bottom {
     align-self: center;
     font-size: 4vw;
@@ -298,7 +302,7 @@ body {
         color: #ffffff;
         text-transform: uppercase; }
   .project--3 {
-    background-color: #a2ff51; }
+    background-color: #32820A; }
     .project--3:hover {
       display: flex;
       align-items: center;
@@ -732,7 +736,7 @@ body {
     .project-skill__skill--2 {
       color: #51a2ff; }
     .project-skill__skill--3 {
-      color: #a2ff51; }
+      color: #32820A; }
 
 .project-text {
   font-family: "Catamaran";
