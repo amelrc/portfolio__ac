@@ -1,35 +1,37 @@
-let image = document.getElementById('image');
-const btnLeft = document.querySelector('.project-btn--left');
-const btnRight = document.querySelector('.project-btn--right');
+export class Project {
+    constructor() {
+        this.image = document.getElementById('image');
+        this.btnLeft = document.querySelector('.project-btn--left');
+        this.btnRight = document.querySelector('.project-btn--right');
+        this.index = 1;
+        this.array = [
+            "../img/rubric-slider1.png",
+             "../img/rubric-slider2.png", 
+             "../img/rubric-slider3.png",
+             "../img/rubric-slider4.png",
+             "../img/rubric-slider5.png",
+            ];
+        this.btnLeft.addEventListener('click', this.previous);
+        this.btnRight.addEventListener('click', this.next);
 
-let index = 1;
-let array = [
-    "../img/rubric-slider1.png",
-     "../img/rubric-slider2.png", 
-     "../img/rubric-slider3.png",
-     "../img/rubric-slider4.png",
-     "../img/rubric-slider5.png",
-    ];
+        document.addEventListener('keydown', (event) => {
+            const key = event.keyCode;
+            const left = key == '37';
+            const right = key == '39';
+            return left ? this.previous() 
+                 : right ? this.next()
+                 : '';
+          });
+        }
 
-btnLeft.addEventListener('click', previous);
-btnRight.addEventListener('click', next);
+    previous = () => {
+        this.image.setAttribute('src', this.array[this.index--])
+        if(this.index < 0){this.index = 4}
+    }
 
-function previous(){
-    image.setAttribute('src', array[index--])
-    if(index < 0){index = 4}
+
+    next = () => {
+        this.image.setAttribute('src', this.array[this.index++])
+        if(this.index > 4){this.index = 0}
+    }
 }
-
-function next(){
-    console.log('clicked')
-    image.setAttribute('src', array[index++])
-    if(index > 4){index = 0}
-}
-
-document.addEventListener('keydown', (event) => {
-    const key = event.keyCode;
-    const left = key == '37';
-    const right = key == '39';
-    return left ? previous() 
-         : right ? next()
-         : '';
-  });

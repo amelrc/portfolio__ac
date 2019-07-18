@@ -68,6 +68,9 @@ body {
   margin: 0;
   height: 100vh; }
 
+li {
+  list-style: none; }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -107,6 +110,19 @@ body {
   margin: 0;
   padding: 0; }
 
+.social {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat; }
+  .social--1 {
+    background-image: url("../../img/link.png"); }
+    .social--1:hover {
+      background-image: url("../../img/link-dark.png"); }
+  .social--2 {
+    background-image: url("../../img/gh.png"); }
+    .social--2:hover {
+      background-image: url("../../img/gh-dark.png"); }
+
 .project-link {
   margin: 10px 0;
   text-decoration: none;
@@ -117,6 +133,7 @@ body {
   font-weight: 800;
   letter-spacing: 7px;
   color: #ffffff;
+  font-size: 2em;
   font-size: 3vw;
   color: #ffffff; }
   .project-link--0:hover {
@@ -286,6 +303,7 @@ body {
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
+        font-size: 2em;
         text-transform: uppercase; }
   .project--2 {
     background-color: #51a2ff;
@@ -302,6 +320,7 @@ body {
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
+        font-size: 2em;
         text-transform: uppercase; }
   .project--3 {
     background-color: #32820A; }
@@ -317,6 +336,7 @@ body {
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
+        font-size: 2em;
         text-transform: uppercase; }
   .project--4 {
     visibility: hidden;
@@ -332,7 +352,8 @@ body {
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
-        color: #ffffff; }
+        color: #ffffff;
+        font-size: 2em; }
   .project--5 {
     visibility: hidden;
     background-color: #ae51ff; }
@@ -347,7 +368,8 @@ body {
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
-        color: #ffffff; }
+        color: #ffffff;
+        font-size: 2em; }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .content {
@@ -375,7 +397,7 @@ body {
   .project {
     width: 5%; } }
 
-@media only screen and (min-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
   .content {
     display: flex;
     flex-direction: column;
@@ -398,7 +420,9 @@ body {
     margin-bottom: 100px;
     margin-top: -200px; }
   .project {
-    width: 5%; } }
+    width: 5%; }
+  .project-link {
+    font-size: 5vw; } }
 
 @media only screen and (max-width: 736px) and (orientation: landscape) {
   .content {
@@ -448,46 +472,46 @@ body {
 
 .picture {
   align-self: flex-end;
-  width: 25%;
-  z-index: 1; }
+  width: 30%;
+  z-index: 1;
+  margin-bottom: 20px; }
 
 .about {
-  display: flex;
-  flex-direction: column;
   font-family: Catamaran;
-  justify-content: space-evenly; }
+  width: 60%;
+  height: 90%;
+  align-self: center;
+  z-index: 1;
+  overflow: scroll; }
 
 .header-about {
   color: #ffffff;
-  font-size: 6vw;
+  font-size: 4em;
   font-weight: 900;
   line-height: 0.6;
   text-transform: uppercase;
-  width: 30%;
-  margin: 0; }
+  width: 30%; }
 
 .sub-header-about {
   color: #ffffff;
-  font-size: 1.9vw;
+  font-size: 1.5em;
   font-stretch: normal;
   font-style: normal;
   font-weight: 800;
   letter-spacing: normal;
   line-height: 1.2;
-  position: absolute;
-  margin-left: 130px; }
+  margin: 72px 0 72px 15%; }
 
 .content-about {
   font-family: "Catamaran";
-  font-size: 1.1vw;
+  font-size: 1em;
   font-weight: 100;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #373540;
   color: #ffffff;
   font-weight: normal;
-  margin-left: 130px; }
+  margin-left: 15%; }
 
 .wrapper-header, .wrapper-sub-header, .wrapper-text {
   position: relative; }
@@ -519,7 +543,7 @@ body {
     display: flex; }
   .italic--about {
     font-family: Playfair Display;
-    font-size: 7vw;
+    font-size: 1em;
     font-weight: 900;
     line-height: 0.6;
     text-transform: lowercase; }
@@ -578,29 +602,17 @@ body {
     flex-direction: column; }
   .picture {
     width: 100%; }
-  .cross {
-    width: 30px;
-    margin: 14px; }
-  .wrapper-header {
-    margin-bottom: 0; }
-  .wrapper-text {
-    height: 300px;
-    width: 100%;
-    margin-top: 60px;
-    overflow: scroll; }
   .about {
     width: 90%;
     height: 70%;
     margin-top: -90px;
-    z-index: 1;
-    align-self: center;
-    display: block; }
+    align-self: center; }
   .header-about {
     font-size: 15vw; }
   .sub-header-about {
     font-size: 5.7vw;
     width: 100%;
-    margin-left: 0; }
+    margin: 0; }
   .content-about {
     font-size: 4vw;
     margin-left: 0; }
@@ -612,16 +624,6 @@ body {
     flex-direction: column; }
   .picture {
     width: 100%; }
-  .cross {
-    width: 30px;
-    margin: 14px; }
-  .wrapper-header {
-    margin-bottom: 0; }
-  .wrapper-text {
-    height: 255px;
-    width: 100%;
-    margin-top: 66px;
-    overflow: scroll; }
   .about {
     width: 90%;
     height: 70%;
@@ -634,7 +636,7 @@ body {
   .sub-header-about {
     font-size: 5.7vw;
     width: 100%;
-    margin-left: 0; }
+    margin: 0; }
   .content-about {
     font-size: 4vw;
     margin-left: 0; }
@@ -642,11 +644,8 @@ body {
     font-size: 15vw; } }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
-  .wrapper-header {
-    margin-bottom: 10px; }
-  .wrapper-text {
-    height: 225px;
-    margin-top: 50px; } }
+  .sub-header-about {
+    margin: 0; } }
 
 .container--project {
   display: flex;
@@ -837,6 +836,8 @@ body {
     padding: 0 20px; }
   .project-text {
     font-size: 4vw; }
+  .image-intro {
+    width: 90%; }
   .image-ipad {
     width: 80%;
     height: 100%;
@@ -868,7 +869,7 @@ body {
     box-shadow: -10px 10px 0px 0px rgba(71, 69, 84, 0.4);
     width: 90%; }
   .image-intro {
-    width: 80%;
+    width: 90%;
     display: flex;
     align-self: center;
     padding: 20px 25px; }

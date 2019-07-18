@@ -5,6 +5,10 @@ body {
     height: 100vh;
 }
 
+li {
+    list-style: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -49,6 +53,25 @@ body {
     background-color: $dark-gray;
     margin: 0;
     padding: 0;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    &--1 {
+        background-image: url('../../img/link.png');
+        &:hover {
+            background-image: url('../../img/link-dark.png');
+        }
+    }
+    &--2 {
+        background-image: url('../../img/gh.png');
+        &:hover {
+            background-image: url('../../img/gh-dark.png');
+        }
+    }
+    
 }
 
 .project-link {
@@ -370,9 +393,8 @@ and (orientation : portrait){
     }
 }
 
-
 @media only screen 
-and (min-width : 414px) 
+and (max-width : 414px) 
 and (orientation : portrait){
 
     .content {
@@ -406,6 +428,10 @@ and (orientation : portrait){
 
     .project {
         width: 5%;
+    }
+
+    .project-link {
+        font-size: 5vw;
     }
 }
 

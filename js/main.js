@@ -1,9 +1,6 @@
+import {Project} from "./project.js";
 
-let bg1 = document.querySelector('.container__body');
-let headerBody = document.querySelector('.header-body');
-let projects = document.querySelectorAll('.project');
-let projectLink = document.querySelectorAll('.p-link');
-let wrapperProjects = document.querySelector('.wrapper__projects')
+// const project = new Project();
 
 const crossMenu = document.querySelector('.cross--menu');
 const menu = document.querySelector('.menu');
@@ -14,6 +11,12 @@ const modifiers = [
     'background--4',
     'background--5'
 ];
+
+let bg1 = document.querySelector('.container__body');
+let headerBody = document.querySelector('.header-body');
+let projects = document.querySelectorAll('.project');
+let projectLink = document.querySelectorAll('.p-link');
+let wrapperProjects = document.querySelector('.wrapper__projects');
 
 menu.addEventListener('click', openMenu);
 crossMenu.addEventListener('click', closeMenu);
@@ -82,17 +85,17 @@ function navHover(el) {
 }
 
 function navClick(el) {
-    console.log(el.target)
-    console.log(el.curentTarget)
     headerBody.classList.add('hidden');
    
     projects.forEach(project => {
 
         if (project === el.currentTarget) {
-            project.children[0].classList.remove('hidden')
-            console.log(project.children[0].classList)
+
+            project.children[0].classList.remove('hidden');
+
         } else if (project.children.length > 0) {
-            console.log(project.children[0].classList.add('hidden'))
+            
+            project.children[0].classList.add('hidden');
         }
     })
 
