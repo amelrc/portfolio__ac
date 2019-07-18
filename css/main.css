@@ -103,7 +103,9 @@ body {
   align-items: center;
   height: 100%;
   justify-content: center;
-  background-color: #474554; }
+  background-color: #474554;
+  margin: 0;
+  padding: 0; }
 
 .project-link {
   margin: 10px 0;
@@ -165,7 +167,7 @@ body {
 
 .content {
   display: grid;
-  grid-template-columns: 50% repeat(2, 20%);
+  grid-template-columns: 45% repeat(2, 20%);
   grid-template-rows: repeat(3, 1fr); }
   .content__center {
     grid-row-start: 2; }
@@ -187,7 +189,7 @@ body {
   .text--outline {
     -webkit-text-stroke: 2px #F85959;
     color: transparent;
-    font-size: 5vw;
+    font-size: 4.5vw;
     justify-self: end; }
   .text--center {
     grid-row-start: 2; }
@@ -347,82 +349,96 @@ body {
         letter-spacing: 7px;
         color: #ffffff; }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .content__right {
-    margin-bottom: 88px; }
-  .arrow {
-    margin-bottom: 0; }
-  .text--ampersand {
-    margin-top: 100px;
-    margin-right: 260px; } }
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .content {
+    grid-template-rows: repeat(3, 46px); } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .content {
+    display: flex;
     flex-direction: column;
-    width: auto; }
+    align-self: center;
+    width: 48%; }
+  .text--outline {
+    font-size: 7vw; }
+  .text--ampersand {
+    align-self: flex-end;
+    font-size: 13vw;
+    margin-top: -32px;
+    margin-bottom: -72px; }
+  .text--full {
+    align-self: flex-start;
+    font-size: 6vw; }
   .cross--menu {
     margin-bottom: 100px;
     margin-top: -200px; }
-  .text--outline {
-    font-size: 7vw; }
-  .text--full {
-    font-size: 6vw; }
-  .text--ampersand {
-    margin-right: 260px;
-    margin-top: 155px; }
-  .arrow {
-    margin-bottom: 70px; }
   .project {
     width: 5%; } }
 
 @media only screen and (min-width: 414px) and (orientation: portrait) {
   .content {
+    display: flex;
     flex-direction: column;
-    width: auto; }
-    .content__right {
-      margin: 14px 0; }
-  .text--ampersand {
-    margin-right: 110px;
-    margin-top: 120px;
-    font-size: 16vw; }
-  .arrow__image {
-    margin-bottom: 60px; }
-  .text--outline {
-    font-size: 8vw; }
-  .text--full {
-    font-size: 7vw; }
+    align-self: center;
+    width: 90%; }
+  .text {
+    margin: 0; }
+    .text--outline {
+      font-size: 12vw; }
+    .text--ampersand {
+      align-self: flex-end;
+      font-size: 17vw;
+      margin-right: 68px;
+      margin-bottom: -48px;
+      margin-top: -16px; }
+    .text--full {
+      align-self: flex-start;
+      font-size: 9vw; }
+  .cross--menu {
+    margin-bottom: 100px;
+    margin-top: -200px; }
   .project {
-    width: 10%; }
-  .project-link {
-    font-size: 8vw; } }
+    width: 5%; } }
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  .content {
+    grid-template-rows: repeat(3, 32px);
+    align-items: end; }
+  .text--ampersand {
+    margin-bottom: -16px; }
+  .arrow__image {
+    height: 48px; } }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
   .content {
+    display: flex;
     flex-direction: column;
-    width: auto; }
-    .content__right {
-      margin: 14px 0; }
-  .text--ampersand {
-    margin-right: 70px;
-    margin-top: 100px;
-    font-size: 20vw; }
-  .arrow__image {
-    margin-bottom: 20px; }
+    align-self: center;
+    width: 90%; }
+  .text {
+    margin: 0; }
+    .text--outline {
+      font-size: 12vw; }
+    .text--ampersand {
+      align-self: flex-end;
+      font-size: 17vw;
+      margin-right: 68px;
+      margin-bottom: -48px;
+      margin-top: -16px; }
+    .text--full {
+      align-self: flex-start;
+      font-size: 9vw; }
   .project-link {
-    font-size: 7vw;
-    text-align: center; }
-  .text--outline {
-    font-size: 12vw; }
-  .text--full {
-    font-size: 9vw; }
+    font-size: 6vw; }
   .project {
-    width: 10%; } }
+    width: 8%; } }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
+  .text--ampersand {
+    margin-right: 56px;
+    margin-bottom: -40px; }
   .arrow__image {
-    margin-bottom: 10px; }
-  .project-link {
-    font-size: 6vw; } }
+    height: 48px; } }
 
 .wrapper-content {
   display: flex;
