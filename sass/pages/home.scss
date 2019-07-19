@@ -271,6 +271,7 @@ li {
     &--1 {
         background-color: $red;
         &:hover {
+            display: flex;
             @include project;
         }
     }

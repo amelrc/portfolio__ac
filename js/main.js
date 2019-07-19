@@ -19,7 +19,6 @@ menu.addEventListener('click', openMenu);
 crossMenu.addEventListener('click', closeMenu);
 
 function openMenu() {
-    console.log('menu')
     let openMenu = document.querySelector('.open-menu');
     openMenu.classList.remove('closed-menu');
     headerBody.classList.add('closed-menu');
