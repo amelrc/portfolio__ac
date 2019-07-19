@@ -1,8 +1,7 @@
-import {Project} from "./project.js";
+// import {Project} from './project.js';
 
 const crossMenu = document.querySelector('.cross--menu');
 const menu = document.querySelector('.menu');
-const wrapper = document.querySelector('.wrapper-content');
 const modifiers = [
     'background--1',
     'background--2',
@@ -20,7 +19,7 @@ menu.addEventListener('click', openMenu);
 crossMenu.addEventListener('click', closeMenu);
 
 function openMenu() {
-    
+    console.log('menu')
     let openMenu = document.querySelector('.open-menu');
     openMenu.classList.remove('closed-menu');
     headerBody.classList.add('closed-menu');
@@ -117,13 +116,13 @@ bg1.addEventListener('click', (e) => {
     let projectBG = bg1.classList[1];
     hideLink()
 
-    if (e.target === e.currentTarget || e.target === bg1.children[2]){
+    if (e.target === e.currentTarget || e.target === bg1.children[2]) {
         
         hideLink()
         bg1.classList.remove(projectBG);
         headerBody.classList.remove('hidden');  
     }   
-})
+});
 
-const project = new Project();
+// const project = new Project();
 

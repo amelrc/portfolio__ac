@@ -29,7 +29,6 @@ export class Project {
         if(this.index < 0){this.index = 4}
     }
 
-
     next = () => {
         this.image.setAttribute('src', this.array[this.index++])
         if(this.index > 4){this.index = 0}
