@@ -281,9 +281,9 @@ li {
 .project {
     width: 1%;
     height: 100%;
-    &--0 {
-        visibility: hidden;
-    }
+    // &--0 {
+    //     visibility: hidden;
+    // }
     &--1 {
         background-color: $red;
         &:hover {

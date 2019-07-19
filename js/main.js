@@ -1,7 +1,5 @@
 import {Project} from "./project.js";
 
-// const project = new Project();
-
 const crossMenu = document.querySelector('.cross--menu');
 const menu = document.querySelector('.menu');
 const modifiers = [
@@ -15,7 +13,6 @@ const modifiers = [
 let bg1 = document.querySelector('.container__body');
 let headerBody = document.querySelector('.header-body');
 let projects = document.querySelectorAll('.project');
-let projectLink = document.querySelectorAll('.p-link');
 let wrapperProjects = document.querySelector('.wrapper__projects');
 
 menu.addEventListener('click', openMenu);
@@ -88,19 +85,14 @@ function navClick(el) {
     headerBody.classList.add('hidden');
    
     projects.forEach(project => {
-
         if (project === el.currentTarget) {
-
             project.children[0].classList.remove('hidden');
-
         } else if (project.children.length > 0) {
-            
             project.children[0].classList.add('hidden');
         }
     })
 
     modifiers.forEach(bgClass => {
-        
         const projectNumber = el.currentTarget.classList[1].charAt(9);
         const classNumber = bgClass.charAt(12);
         
@@ -109,22 +101,29 @@ function navClick(el) {
     }); 
 }
 
+function hideLink() {
+    projects.forEach(project => {
+        if(project.children.length > 0) {
+            if(!project.children[0].classList.contains('hidden')) {
+                project.children[0].classList.add('hidden');
+            }
+        }
+    })
+}
+
 bg1.addEventListener('click', (e) => {
 
-    let projectBG = bg1.classList[1]
+    let projectBG = bg1.classList[1];
+    hideLink()
 
+  
     if (e.target === e.currentTarget || e.target === bg1.children[2]){
-
+        
+        hideLink()
         bg1.classList.remove(projectBG);
-        headerBody.classList.remove('hidden');
-
-        projects.forEach(project => {
-            if(project.children.length > 0) {
-                if(!project.children[0].classList.contains('hidden')) {
-                    project.children[0].classList.add('hidden');
-                }
-            }
-        })
+        headerBody.classList.remove('hidden');  
     }   
 })
+
+const project = new Project();
 

@@ -287,8 +287,6 @@ li {
 .project {
   width: 1%;
   height: 100%; }
-  .project--0 {
-    visibility: hidden; }
   .project--1 {
     background-color: #F85959; }
     .project--1:hover {
