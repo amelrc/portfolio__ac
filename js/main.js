@@ -32,22 +32,20 @@ function closeMenu() {
     openMenu.classList.add('closed-menu');
     headerBody.classList.remove('closed-menu');
     wrapperProjects.classList.remove('closed-menu');
-
 }
 
 // Projects Nav
 
 projects.forEach(project => {
     project.addEventListener('click', (el) => navClick(el))
-
 });
 
 projects.forEach(project => {
-    project.addEventListener('mouseenter', (el) => navHover(el))
+    project.addEventListener('mouseover', (el) => navHover(el))
 });
 
 projects.forEach(project => {
-    project.addEventListener("mouseleave", (el) => navOutHover(el))
+    project.addEventListener('mouseout', (el) => navOutHover(el))
 });
 
 function navOutHover(el) {
