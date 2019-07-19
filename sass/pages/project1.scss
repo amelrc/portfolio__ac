@@ -19,11 +19,11 @@
         height: 40%;
     }
     &__one {
-        width: 30%;
+        width: 40%;
         overflow-y: auto;
         overflow-x: hidden;
         background-color: $light-gray;
-        padding: 100px 200px;
+        padding: 100px;
     }
     &__two {
         background-color: $dark-gray;
@@ -127,14 +127,14 @@
 }
 
 .image-ipad {
-    border: 15px solid #212027;
+    border: 15px solid $dark;
     border-radius: 15px;
     width: 60%;
     height: 100%;
 }
 
 .image-iphone {
-    border: 10px solid #212027;
+    border: 10px solid $dark;
     border-radius: 15px;
     margin: 0 60px;
     width: 20%;
@@ -170,14 +170,14 @@ and (orientation : portrait) {
 
     .image-ipad {
         height: 100%;
-        border: 15px solid #212027;
+        border: 15px solid $dark;
         border-radius: 15px;
     }
 
     .image-iphone {
         width: 50%;
         height: 20%;
-        border: 15px solid #212027;
+        border: 15px solid $dark;
         border-radius: 15px;
     }
     
@@ -196,7 +196,7 @@ and (orientation : landscape) {
 
     .image-ipad {
         height: 100%;
-        border: 15px solid #212027;
+        border: 15px solid $dark;
         border-radius: 15px;
         margin: 0 30px;
     }
@@ -204,7 +204,7 @@ and (orientation : landscape) {
         margin: 0 40px;
         width: 20%;
         height: 20%;
-        border: 7px solid #212027;
+        border: 7px solid $dark;
         border-radius: 7px;      
     }
 }
@@ -241,7 +241,7 @@ and (orientation : portrait) {
     .image-ipad {
         width: 80%;
         height: 100%;
-        border: 7px solid #212027;
+        border: 7px solid $dark;
         border-radius: 7px;
         margin: 0 30px;
     }
@@ -249,7 +249,7 @@ and (orientation : portrait) {
     .image-iphone {
         width: 60%;
         height: 20%;
-        border: 5px solid #212027;
+        border: 5px solid $dark;
         border-radius: 7px;
     }
     .image-iphone--l,.image-iphone--r {
@@ -297,7 +297,7 @@ and (orientation : portrait) {
     .image-ipad {
         width: 80%;
         height: 100%;
-        border: 7px solid #212027;
+        border: 7px solid $dark;
         border-radius: 7px;
         margin: 0 30px;
     }
@@ -305,7 +305,7 @@ and (orientation : portrait) {
     .image-iphone {
         width: 60%;
         height: 20%;
-        border: 5px solid #212027;
+        border: 5px solid $dark;
         border-radius: 7px;
     }
     .image-iphone--l,.image-iphone--r {
@@ -358,7 +358,7 @@ and (orientation : landscape) {
     .image-ipad {
         width: 60%;
         height: 100%;
-        border: 7px solid #212027;
+        border: 7px solid $dark;
         border-radius: 7px;
         margin: 0 30px;
     }
@@ -366,7 +366,7 @@ and (orientation : landscape) {
     .image-iphone {
         width: 20%;
         height: 20%;
-        border: 5px solid #212027;
+        border: 5px solid $dark;
         border-radius: 7px;
     }
     .image-iphone--l,.image-iphone--r {

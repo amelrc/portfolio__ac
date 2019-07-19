@@ -33,3 +33,13 @@
     font-size: 2em;
 }
 
+@mixin project {
+    display: flex;
+    align-items: center;
+    width: auto;
+    .p-name {
+        @include navigation;
+        text-transform: uppercase;
+    }
+}
+

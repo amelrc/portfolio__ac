@@ -2,6 +2,7 @@ import {Project} from "./project.js";
 
 const crossMenu = document.querySelector('.cross--menu');
 const menu = document.querySelector('.menu');
+const wrapper = document.querySelector('.wrapper-content');
 const modifiers = [
     'background--1',
     'background--2',
@@ -19,6 +20,7 @@ menu.addEventListener('click', openMenu);
 crossMenu.addEventListener('click', closeMenu);
 
 function openMenu() {
+    
     let openMenu = document.querySelector('.open-menu');
     openMenu.classList.remove('closed-menu');
     headerBody.classList.add('closed-menu');
@@ -30,6 +32,7 @@ function closeMenu() {
     openMenu.classList.add('closed-menu');
     headerBody.classList.remove('closed-menu');
     wrapperProjects.classList.remove('closed-menu');
+
 }
 
 // Projects Nav
@@ -116,7 +119,6 @@ bg1.addEventListener('click', (e) => {
     let projectBG = bg1.classList[1];
     hideLink()
 
-  
     if (e.target === e.currentTarget || e.target === bg1.children[2]){
         
         hideLink()

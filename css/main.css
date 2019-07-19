@@ -264,14 +264,6 @@ li {
   flex-direction: column;
   align-items: flex-end; }
 
-.wrapper {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  position: absolute;
-  width: 100%;
-  background-color: #eeeeef; }
-
 .p-name {
   display: none; }
 
@@ -351,7 +343,8 @@ li {
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
-        font-size: 2em; }
+        font-size: 2em;
+        text-transform: uppercase; }
   .project--5 {
     visibility: hidden;
     background-color: #ae51ff; }
@@ -367,7 +360,8 @@ li {
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
-        font-size: 2em; }
+        font-size: 2em;
+        text-transform: uppercase; }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .content {
@@ -663,11 +657,11 @@ li {
   .section__cero {
     height: 40%; }
   .section__one {
-    width: 30%;
+    width: 40%;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #eeeeef;
-    padding: 100px 200px; }
+    padding: 100px; }
   .section__two {
     background-color: #474554;
     width: 100%;
@@ -753,7 +747,7 @@ li {
 
 .project-text {
   font-family: "Catamaran";
-  font-size: 1.1vw;
+  font-size: 1em;
   font-weight: 100;
   font-style: normal;
   line-height: normal;
