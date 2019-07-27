@@ -314,6 +314,7 @@ li {
   .project--3 {
     background-color: #32820A; }
     .project--3:hover {
+      display: flex;
       align-items: center;
       width: auto; }
       .project--3:hover .p-name {
@@ -409,6 +410,10 @@ li {
     margin-top: -200px; }
   .project {
     width: 5%; }
+    .project--1 {
+      display: block; }
+    .project--3 {
+      display: block; }
   .project-link {
     font-size: 5vw; } }
 

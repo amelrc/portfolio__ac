@@ -285,6 +285,7 @@ li {
     &--3 {
         background-color: $green;
         &:hover {
+            display: flex;
             @include project;
         }
     }
@@ -354,6 +355,7 @@ and (orientation : portrait){
 and (max-width : 414px) 
 and (orientation : portrait){
 
+
     .content {
         display: flex;
         flex-direction: column;
@@ -385,6 +387,12 @@ and (orientation : portrait){
 
     .project {
         width: 5%;
+        &--1 {
+            display: block;
+        }
+        &--3 {
+            display: block;
+        }
     }
 
     .project-link {
