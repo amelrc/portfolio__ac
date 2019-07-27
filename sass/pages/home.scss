@@ -452,6 +452,12 @@ and (orientation : portrait) {
 
     .project {
         width: 8%;
+        &--1 {
+            display: block;
+        }
+        &--3 {
+            display: block;
+        }
     }
 }
 

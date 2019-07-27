@@ -448,7 +448,11 @@ li {
   .project-link {
     font-size: 6vw; }
   .project {
-    width: 8%; } }
+    width: 8%; }
+    .project--1 {
+      display: block; }
+    .project--3 {
+      display: block; } }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .text--ampersand {
