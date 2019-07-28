@@ -111,31 +111,30 @@ li {
   padding: 0; }
 
 .social {
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat; }
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  margin-top: 30px; }
   .social--1 {
-    background-image: url("../../img/link.png"); }
+    margin: 0 20px 0 15%;
+    background-image: url("../../img/LinkedIn-Mark-Light-32px.png"); }
     .social--1:hover {
-      background-image: url("../../img/link-dark.png"); }
+      background-image: url("../../img/LinkedIn-Mark-32px.png"); }
   .social--2 {
-    background-image: url("../../img/gh.png"); }
+    background-image: url("../../img/GitHub-Mark-Light-32px.png"); }
     .social--2:hover {
-      background-image: url("../../img/gh-dark.png"); }
+      background-image: url("../../img/GitHub-Mark-32px.png"); }
 
 .project-link {
-  margin: 10px 0;
-  text-decoration: none;
   display: flex;
-  margin: 0 30px;
   align-self: center;
   font-family: Catamaran;
   font-weight: 800;
   letter-spacing: 7px;
   color: #ffffff;
   font-size: 2em;
-  font-size: 3vw;
-  color: #ffffff; }
+  text-decoration: none; }
   .project-link--0:hover {
     color: #212027; }
   .project-link--1:hover {
@@ -287,29 +286,32 @@ li {
       width: auto; }
       .project--1:hover .p-name {
         display: flex;
-        margin: 0 30px;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
+        line-height: 30px;
+        margin: 30px;
         text-transform: uppercase; }
   .project--2 {
     background-color: #51a2ff;
     visibility: hidden; }
     .project--2:hover {
+      display: flex;
       align-items: center;
       width: auto; }
       .project--2:hover .p-name {
         display: flex;
-        margin: 0 30px;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
+        line-height: 30px;
+        margin: 30px;
         text-transform: uppercase; }
   .project--3 {
     background-color: #32820A; }
@@ -319,45 +321,50 @@ li {
       width: auto; }
       .project--3:hover .p-name {
         display: flex;
-        margin: 0 30px;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
+        line-height: 30px;
+        margin: 30px;
         text-transform: uppercase; }
   .project--4 {
     visibility: hidden;
     background-color: #ffae51; }
     .project--4:hover {
+      display: flex;
       align-items: center;
       width: auto; }
       .project--4:hover .p-name {
         display: flex;
-        margin: 0 30px;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
+        line-height: 30px;
+        margin: 30px;
         text-transform: uppercase; }
   .project--5 {
     visibility: hidden;
     background-color: #ae51ff; }
     .project--5:hover {
+      display: flex;
       align-items: center;
       width: auto; }
       .project--5:hover .p-name {
         display: flex;
-        margin: 0 30px;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
         letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
+        line-height: 30px;
+        margin: 30px;
         text-transform: uppercase; }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
@@ -380,9 +387,6 @@ li {
   .text--full {
     align-self: flex-start;
     font-size: 6vw; }
-  .cross--menu {
-    margin-bottom: 100px;
-    margin-top: -200px; }
   .project {
     width: 5%; } }
 
@@ -405,15 +409,8 @@ li {
     .text--full {
       align-self: flex-start;
       font-size: 9vw; }
-  .cross--menu {
-    margin-bottom: 100px;
-    margin-top: -200px; }
   .project {
     width: 5%; }
-    .project--1 {
-      display: block; }
-    .project--3 {
-      display: block; }
   .project-link {
     font-size: 5vw; } }
 
@@ -448,11 +445,7 @@ li {
   .project-link {
     font-size: 6vw; }
   .project {
-    width: 8%; }
-    .project--1 {
-      display: block; }
-    .project--3 {
-      display: block; } }
+    width: 8%; } }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .text--ampersand {

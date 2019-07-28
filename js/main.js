@@ -16,7 +16,7 @@ let projects = document.querySelectorAll('.project');
 let wrapperProjects = document.querySelector('.wrapper__projects');
 
 menu.addEventListener('click', openMenu);
-crossMenu.addEventListener('click', closeMenu);
+// crossMenu.addEventListener('click', closeMenu);
 
 function openMenu() {
     let openMenu = document.querySelector('.open-menu');
@@ -25,12 +25,12 @@ function openMenu() {
     wrapperProjects.classList.add('closed-menu');
 }
 
-function closeMenu() {
-    let openMenu = document.querySelector('.open-menu');
-    openMenu.classList.add('closed-menu');
-    headerBody.classList.remove('closed-menu');
-    wrapperProjects.classList.remove('closed-menu');
-}
+// function closeMenu() {
+//     let openMenu = document.querySelector('.open-menu');
+//     openMenu.classList.add('closed-menu');
+//     headerBody.classList.remove('closed-menu');
+//     wrapperProjects.classList.remove('closed-menu');
+// }
 
 // Projects Nav
 

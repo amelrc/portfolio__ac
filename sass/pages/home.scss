@@ -56,29 +56,30 @@ li {
 }
 
 .social {
-    width: 40px;
-    height: 40px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
     background-repeat: no-repeat;
+    margin-top: 30px;
     &--1 {
-        background-image: url('../../img/link.png');
+        margin: 0 20px 0 15%;
+        background-image: url("../../img/LinkedIn-Mark-Light-32px.png");
         &:hover {
-            background-image: url('../../img/link-dark.png');
+            background-image: url('../../img/LinkedIn-Mark-32px.png');
         }
     }
     &--2 {
-        background-image: url('../../img/gh.png');
+        background-image: url('../../img/GitHub-Mark-Light-32px.png');
         &:hover {
-            background-image: url('../../img/gh-dark.png');
+            background-image: url('../../img/GitHub-Mark-32px.png');
         }
     }
 }
 
 .project-link {
-    margin: 10px 0;
-    text-decoration: none;
+    
     @include navigation;
-    font-size: 3vw;
-    color: $white;
+    text-decoration: none;
     &--0 {
         &:hover {
             color: $dark;
@@ -271,7 +272,6 @@ li {
     &--1 {
         background-color: $red;
         &:hover {
-            display: flex;
             @include project;
         }
     }
@@ -285,8 +285,7 @@ li {
     &--3 {
         background-color: $green;
         &:hover {
-            display: flex;
-            @include project;
+            @include project;      
         }
     }
     &--4 {
@@ -341,11 +340,6 @@ and (orientation : portrait){
         font-size: 6vw;
     }
 
-    .cross--menu {
-        margin-bottom: 100px;
-        margin-top: -200px;
-    }
-
     .project {
         width: 5%;
     }
@@ -380,19 +374,8 @@ and (orientation : portrait){
         }
     }
 
-    .cross--menu {
-        margin-bottom: 100px;
-        margin-top: -200px;
-    }
-
     .project {
         width: 5%;
-        &--1 {
-            display: block;
-        }
-        &--3 {
-            display: block;
-        }
     }
 
     .project-link {
@@ -452,12 +435,6 @@ and (orientation : portrait) {
 
     .project {
         width: 8%;
-        &--1 {
-            display: block;
-        }
-        &--3 {
-            display: block;
-        }
     }
 }
 
