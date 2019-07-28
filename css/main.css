@@ -183,7 +183,7 @@ li {
 
 .content {
   display: grid;
-  grid-template-columns: 45% repeat(2, 20%);
+  grid-template-columns: 45% repeat(2, 25%);
   grid-template-rows: repeat(3, 1fr); }
   .content__center {
     grid-row-start: 2; }
