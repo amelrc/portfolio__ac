@@ -281,8 +281,7 @@ li {
   .project--1 {
     background-color: #F85959; }
     .project--1:hover {
-      display: flex;
-      align-items: center;
+      display: block;
       width: auto; }
       .project--1:hover .p-name {
         display: flex;
@@ -299,8 +298,7 @@ li {
     background-color: #51a2ff;
     visibility: hidden; }
     .project--2:hover {
-      display: flex;
-      align-items: center;
+      display: block;
       width: auto; }
       .project--2:hover .p-name {
         display: flex;
@@ -316,8 +314,7 @@ li {
   .project--3 {
     background-color: #32820A; }
     .project--3:hover {
-      display: flex;
-      align-items: center;
+      display: block;
       width: auto; }
       .project--3:hover .p-name {
         display: flex;
@@ -334,8 +331,7 @@ li {
     visibility: hidden;
     background-color: #ffae51; }
     .project--4:hover {
-      display: flex;
-      align-items: center;
+      display: block;
       width: auto; }
       .project--4:hover .p-name {
         display: flex;
@@ -352,8 +348,7 @@ li {
     visibility: hidden;
     background-color: #ae51ff; }
     .project--5:hover {
-      display: flex;
-      align-items: center;
+      display: block;
       width: auto; }
       .project--5:hover .p-name {
         display: flex;
