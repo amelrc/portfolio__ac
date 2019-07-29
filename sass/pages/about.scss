@@ -93,6 +93,27 @@
     }
 }
 
+.social {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    &--1 {
+        margin: 0 20px 0 15%;
+        background-image: url('../img/LinkedIn-Mark-Light-32px.png');
+        &:hover {
+            background-image: url('../img/LinkedIn-Mark-32px.png');
+        }
+    }
+    &--2 {
+        background-image: url('../img/GitHub-Mark-Light-32px.png');
+        &:hover {
+            background-image: url('../img/GitHub-Mark-32px.png');
+        }
+    }
+}
+
 .bg-about {
     color: white;
     display: flex;
