@@ -42,6 +42,7 @@ li {
 .menu {
     align-self: center;
     width: 30px;
+    cursor: pointer;
 }
 
 .open-menu {
@@ -247,6 +248,7 @@ li {
 
 .project {
     width: 1%;
+    max-width: 1%;
     height: 100%;
     &--1 {
         background-color: $red;
@@ -325,6 +327,23 @@ and (orientation : portrait){
 }
 
 @media only screen 
+and (max-width : 736px) 
+and (orientation : landscape){
+    .content {
+        grid-template-rows: repeat(3, 32px);
+        align-items: end;
+    }
+
+    .text--ampersand {
+        margin-bottom: -16px;
+    }
+
+    .arrow__image {
+        height: 48px;
+    }
+}
+
+@media only screen 
 and (max-width : 414px) 
 and (orientation : portrait){
 
@@ -355,27 +374,14 @@ and (orientation : portrait){
 
     .project {
         width: 5%;
+        max-width: 5%;
+        &:hover {
+        transition: 0.5s ease-out;
+        }
     }
 
     .project-link {
         font-size: 5vw;
-    }
-}
-
-@media only screen 
-and (max-width : 736px) 
-and (orientation : landscape){
-    .content {
-        grid-template-rows: repeat(3, 32px);
-        align-items: end;
-    }
-
-    .text--ampersand {
-        margin-bottom: -16px;
-    }
-
-    .arrow__image {
-        height: 48px;
     }
 }
 
@@ -414,6 +420,10 @@ and (orientation : portrait) {
 
     .project {
         width: 8%;
+        max-width: 8%;
+        &:hover{
+        transition: 0.5s ease-out;
+        }
     }
 }
 
@@ -428,5 +438,12 @@ and (orientation : portrait) {
 
     .arrow__image {
         height: 48px;
+    }
+    .project {
+        width: 8%;
+        max-width: 8%;
+        &:hover {
+            transition: 0.5s ease-out;
+        }
     }
 }

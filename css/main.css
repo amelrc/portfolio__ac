@@ -98,7 +98,8 @@ li {
 
 .menu {
   align-self: center;
-  width: 30px; }
+  width: 30px;
+  cursor: pointer; }
 
 .open-menu {
   display: flex;
@@ -115,7 +116,6 @@ li {
   align-self: center;
   font-family: Catamaran;
   font-weight: 800;
-  letter-spacing: 7px;
   color: #ffffff;
   font-size: 2em;
   text-decoration: none; }
@@ -261,90 +261,106 @@ li {
 
 .project {
   width: 1%;
+  max-width: 1%;
   height: 100%; }
   .project--1 {
     background-color: #F85959; }
     .project--1:hover {
       display: block;
-      width: auto; }
+      width: auto;
+      max-width: 100%;
+      transition: 1s ease-out; }
       .project--1:hover .p-name {
         display: flex;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
-        letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
         line-height: 30px;
-        margin: 30px;
-        text-transform: uppercase; }
+        padding: 20px;
+        margin: 0;
+        text-transform: uppercase;
+        white-space: nowrap; }
   .project--2 {
     background-color: #51a2ff;
     visibility: hidden; }
     .project--2:hover {
       display: block;
-      width: auto; }
+      width: auto;
+      max-width: 100%;
+      transition: 1s ease-out; }
       .project--2:hover .p-name {
         display: flex;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
-        letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
         line-height: 30px;
-        margin: 30px;
-        text-transform: uppercase; }
+        padding: 20px;
+        margin: 0;
+        text-transform: uppercase;
+        white-space: nowrap; }
   .project--3 {
     background-color: #32820A; }
     .project--3:hover {
       display: block;
-      width: auto; }
+      width: auto;
+      max-width: 100%;
+      transition: 1s ease-out; }
       .project--3:hover .p-name {
         display: flex;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
-        letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
         line-height: 30px;
-        margin: 30px;
-        text-transform: uppercase; }
+        padding: 20px;
+        margin: 0;
+        text-transform: uppercase;
+        white-space: nowrap; }
   .project--4 {
     visibility: hidden;
     background-color: #ffae51; }
     .project--4:hover {
       display: block;
-      width: auto; }
+      width: auto;
+      max-width: 100%;
+      transition: 1s ease-out; }
       .project--4:hover .p-name {
         display: flex;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
-        letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
         line-height: 30px;
-        margin: 30px;
-        text-transform: uppercase; }
+        padding: 20px;
+        margin: 0;
+        text-transform: uppercase;
+        white-space: nowrap; }
   .project--5 {
     visibility: hidden;
     background-color: #ae51ff; }
     .project--5:hover {
       display: block;
-      width: auto; }
+      width: auto;
+      max-width: 100%;
+      transition: 1s ease-out; }
       .project--5:hover .p-name {
         display: flex;
         align-self: center;
         font-family: Catamaran;
         font-weight: 800;
-        letter-spacing: 7px;
         color: #ffffff;
         font-size: 2em;
         line-height: 30px;
-        margin: 30px;
-        text-transform: uppercase; }
+        padding: 20px;
+        margin: 0;
+        text-transform: uppercase;
+        white-space: nowrap; }
 
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
   .content {
@@ -369,6 +385,15 @@ li {
   .project {
     width: 5%; } }
 
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  .content {
+    grid-template-rows: repeat(3, 32px);
+    align-items: end; }
+  .text--ampersand {
+    margin-bottom: -16px; }
+  .arrow__image {
+    height: 48px; } }
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .content {
     display: flex;
@@ -389,18 +414,12 @@ li {
       align-self: flex-start;
       font-size: 9vw; }
   .project {
-    width: 5%; }
+    width: 5%;
+    max-width: 5%; }
+    .project:hover {
+      transition: 0.5s ease-out; }
   .project-link {
     font-size: 5vw; } }
-
-@media only screen and (max-width: 736px) and (orientation: landscape) {
-  .content {
-    grid-template-rows: repeat(3, 32px);
-    align-items: end; }
-  .text--ampersand {
-    margin-bottom: -16px; }
-  .arrow__image {
-    height: 48px; } }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
   .content {
@@ -424,14 +443,22 @@ li {
   .project-link {
     font-size: 6vw; }
   .project {
-    width: 8%; } }
+    width: 8%;
+    max-width: 8%; }
+    .project:hover {
+      transition: 0.5s ease-out; } }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .text--ampersand {
     margin-right: 56px;
     margin-bottom: -40px; }
   .arrow__image {
-    height: 48px; } }
+    height: 48px; }
+  .project {
+    width: 8%;
+    max-width: 8%; }
+    .project:hover {
+      transition: 0.5s ease-out; } }
 
 .wrapper-content {
   display: flex;
@@ -562,9 +589,6 @@ li {
     height: 40px;
     cursor: pointer; }
 
-.hidden {
-  opacity: 0; }
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .picture {
     width: 30%;
@@ -602,7 +626,9 @@ li {
     font-size: 4vw;
     margin-left: 0; }
   .italic--about {
-    font-size: 15vw; } }
+    font-size: 15vw; }
+  .social--1 {
+    margin: 0 20px 0 0; } }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
   .wrapper-content {

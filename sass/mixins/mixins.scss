@@ -27,20 +27,23 @@
     align-self: center;
     font-family: Catamaran;
     font-weight: 800;
-    letter-spacing: 7px;
+    // letter-spacing: 5px;
     color: $white;
     font-size: 2em;
 }
 
 @mixin project {
-    display: block;
-    // align-items: center;
+    display: block;   
     width: auto;
+    max-width: 100%;
+    transition: 1s ease-out;
     .p-name {
         @include navigation;
         line-height: 30px;
-        margin: 30px;
+        padding: 20px;
+        margin:0;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 }
 
