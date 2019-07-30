@@ -43,6 +43,7 @@ li {
     align-self: center;
     width: 30px;
     cursor: pointer;
+    // pointer-events: all;
 }
 
 .open-menu {
@@ -56,11 +57,27 @@ li {
     padding: 0;
 }
 
+.list-item {
+    position: relative;
+    animation: link 0.5s ease-in;
+    @keyframes link {
+        0% { 
+            opacity: 0;
+            top: 10px;
+        }
+        100% { 
+            opacity: 1;
+            top: 0;
+        }
+    }
+}
+
 .project-link {
     
     @include navigation;
     text-decoration: none;
     &--0 {
+        transition: color 0.5s ease;
         &:hover {
             color: $dark;
         }

@@ -111,6 +111,18 @@ li {
   margin: 0;
   padding: 0; }
 
+.list-item {
+  position: relative;
+  animation: link 0.5s ease-in; }
+
+@keyframes link {
+  0% {
+    opacity: 0;
+    top: 10px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
+
 .project-link {
   display: flex;
   align-self: center;
@@ -119,8 +131,10 @@ li {
   color: #ffffff;
   font-size: 2em;
   text-decoration: none; }
-  .project-link--0:hover {
-    color: #212027; }
+  .project-link--0 {
+    transition: color 0.5s ease; }
+    .project-link--0:hover {
+      color: #212027; }
   .project-link--1:hover {
     color: #F85959; }
   .project-link--2:hover {
