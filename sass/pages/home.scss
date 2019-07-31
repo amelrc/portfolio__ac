@@ -73,7 +73,6 @@ li {
 }
 
 .project-link {
-    
     @include navigation;
     text-decoration: none;
     &--0 {
@@ -83,16 +82,19 @@ li {
         }
     }
     &--1 {
+        transition: color 0.5s ease;
         &:hover {
             color: $red;
         }
     }
     &--2 {
+        transition: color 0.5s ease;
         &:hover {
             color: $blue;
         }
     }
     &--3 {
+        transition: color 0.5s ease;
         &:hover {
             color: $green;
         }

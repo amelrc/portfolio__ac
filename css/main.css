@@ -135,12 +135,18 @@ li {
     transition: color 0.5s ease; }
     .project-link--0:hover {
       color: #212027; }
-  .project-link--1:hover {
-    color: #F85959; }
-  .project-link--2:hover {
-    color: #51a2ff; }
-  .project-link--3:hover {
-    color: #32820A; }
+  .project-link--1 {
+    transition: color 0.5s ease; }
+    .project-link--1:hover {
+      color: #F85959; }
+  .project-link--2 {
+    transition: color 0.5s ease; }
+    .project-link--2:hover {
+      color: #51a2ff; }
+  .project-link--3 {
+    transition: color 0.5s ease; }
+    .project-link--3:hover {
+      color: #32820A; }
   .project-link--4:hover {
     color: #ffae51; }
   .project-link--5:hover {
@@ -484,7 +490,17 @@ li {
   align-self: flex-end;
   width: 30%;
   z-index: 1;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative;
+  animation: link 0.4s ease-in; }
+
+@keyframes link {
+  0% {
+    opacity: 0;
+    top: 10px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
 
 .about {
   font-family: Catamaran;
@@ -492,7 +508,17 @@ li {
   height: 90%;
   align-self: center;
   z-index: 1;
-  overflow: scroll; }
+  overflow: scroll;
+  position: relative;
+  animation: link 0.4s ease-in; }
+
+@keyframes link {
+  0% {
+    opacity: 0;
+    top: 10px; }
+  100% {
+    opacity: 1;
+    top: 0; } }
 
 .header-about {
   color: #ffffff;
