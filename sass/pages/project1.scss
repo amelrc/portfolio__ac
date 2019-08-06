@@ -33,7 +33,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 110px 0;
+        padding: 90px 0;
     }
     &__three {
         background-color: $light-gray;
@@ -74,7 +74,7 @@
 .project-btn {
     cursor: pointer;
     width: auto;
-    height: 70px;
+    height: 40px;
     margin: 0 20px;
     align-self: center;
     &--left {
@@ -117,7 +117,7 @@
 }
 
 .image-intro {
-    width: 70%;
+    width: 68%;
 }
 
 .image-desktop {

@@ -729,7 +729,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 110px 0; }
+    padding: 90px 0; }
   .section__three {
     background-color: #eeeeef;
     display: flex;
@@ -760,7 +760,7 @@ li {
 .project-btn {
   cursor: pointer;
   width: auto;
-  height: 70px;
+  height: 40px;
   margin: 0 20px;
   align-self: center; }
   .project-btn--left {
@@ -814,7 +814,7 @@ li {
   color: #373540; }
 
 .image-intro {
-  width: 70%; }
+  width: 68%; }
 
 .image-desktop {
   box-shadow: -20px 20px 0px 0px #373540;
